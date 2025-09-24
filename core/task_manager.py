@@ -60,7 +60,8 @@ class TaskManager:
                         "strategy": execution_plan.execution_strategy
                     },
                     priority=task.get("priority", "medium"),
-                    timeout=300
+                    timeout=300,
+                    phase=task.get("phase", "worker")
                 )
                 task_requests.append(task_request)
                 
@@ -79,29 +80,52 @@ class TaskManager:
                 }
                 await self.mongodb.create_task(task_data)
             
-            # Separate worker tasks from aggregation tasks
-            worker_tasks = [task for task in task_requests if task.agent_type != "aggregation"]
-            aggregation_tasks = [task for task in task_requests if task.agent_type == "aggregation"]
+            # Group tasks by phase
+            worker_tasks = [task for task in task_requests if task.phase == "worker"]
+            validation_tasks = [task for task in task_requests if task.phase == "validation"]
+            summary_tasks = [task for task in task_requests if task.phase == "summary"]
 
-            # Execute worker tasks in parallel
+            all_responses = []
+
+            # Phase 1: Execute worker tasks in parallel (analyst, rag, sql)
             if worker_tasks:
-                logger.info(f"Executing {len(worker_tasks)} worker tasks in parallel")
+                logger.info(f"✅ Phase 1: Executing {len(worker_tasks)} worker tasks in parallel")
                 worker_responses = await self.communicator.execute_tasks_parallel(worker_tasks)
+                all_responses.extend(worker_responses)
             else:
                 worker_responses = []
 
-            # Execute aggregation tasks after worker tasks complete
-            aggregation_responses = []
-            if aggregation_tasks:
-                logger.info(f"Executing {len(aggregation_tasks)} aggregation tasks")
-                for agg_task in aggregation_tasks:
-                    # Prepare aggregation input with worker results
-                    agg_task.input_data = self._prepare_aggregation_data(worker_responses)
-                    agg_response = await self.communicator.execute_task(agg_task)
-                    aggregation_responses.append(agg_response)
+            # Phase 2: Execute validation tasks (sequential, with worker results)
+            if validation_tasks:
+                logger.info(f"✅ Phase 2: Executing {len(validation_tasks)} validation tasks")
+                for val_task in validation_tasks:
+                    # Prepare validation input with worker results
+                    val_task.task_context["worker_results"] = [
+                        {"agent_type": r.agent_type, "result": r.result_data}
+                        for r in worker_responses
+                    ]
+                    val_response = await self.communicator.execute_task(val_task)
+                    all_responses.append(val_response)
 
-            # Combine all responses
-            task_responses = worker_responses + aggregation_responses
+            # Phase 3: Execute summary tasks (sequential, with validation results)
+            if summary_tasks:
+                logger.info(f"✅ Phase 3: Executing {len(summary_tasks)} summary tasks")
+                validation_responses = [r for r in all_responses if r.agent_type == "validation"]
+                for sum_task in summary_tasks:
+                    # Prepare summary input with all previous results
+                    sum_task.task_context["worker_results"] = [
+                        {"agent_type": r.agent_type, "result": r.result_data}
+                        for r in worker_responses
+                    ]
+                    sum_task.task_context["validation_results"] = [
+                        {"agent_type": r.agent_type, "result": r.result_data}
+                        for r in validation_responses
+                    ]
+                    sum_response = await self.communicator.execute_task(sum_task)
+                    all_responses.append(sum_response)
+
+            # All task responses
+            task_responses = all_responses
             
             # Update task statuses in MongoDB
             for response in task_responses:
@@ -161,66 +185,33 @@ class TaskManager:
         # Create execution summary
         execution_summary = f"Executed {len(task_responses)} tasks: {len(completed_tasks)} completed, {len(failed_tasks)} failed, {len(timeout_tasks)} timed out"
         
-        # Check if we have aggregation results
-        aggregation_results = [r for r in completed_tasks if r.agent_type == "aggregation"]
+        # Generate final output from phase results
+        final_output_parts = []
 
-        if aggregation_results:
-            # Use aggregation result as primary output
-            agg_result = aggregation_results[0].result_data
-            if "final_summary" in agg_result:
-                final_output = agg_result["final_summary"]
+        # Summary results (final phase output)
+        summary_results = [r for r in completed_tasks if r.agent_type == "summary"]
+        if summary_results:
+            for result in summary_results:
+                if "summary" in result.result_data:
+                    final_output_parts.append(result.result_data["summary"])
 
-                # Add additional sections from aggregation
-                if "key_insights" in agg_result and agg_result["key_insights"]:
-                    final_output += "\n\n## Key Insights\n"
-                    for insight in agg_result["key_insights"]:
-                        final_output += f"- {insight}\n"
-
-                if "recommendations" in agg_result and agg_result["recommendations"]:
-                    final_output += "\n## Recommendations\n"
-                    for rec in agg_result["recommendations"]:
-                        final_output += f"- {rec}\n"
-
-                if "confidence_score" in agg_result:
-                    confidence = agg_result["confidence_score"]
-                    final_output += f"\n## Confidence Score: {confidence:.1%}\n"
-            else:
-                final_output = "Aggregation completed but no summary available"
-        else:
-            # Fallback to individual agent results
-            final_output_parts = []
-
-            # Add summary results
-            summary_results = [r for r in completed_tasks if r.agent_type == "summary"]
-            if summary_results:
-                final_output_parts.append("## Summary Results")
-                for result in summary_results:
-                    if "summary" in result.result_data:
-                        final_output_parts.append(f"- {result.result_data['summary']}")
-
-            # Add analysis results
-            analysis_results = [r for r in completed_tasks if r.agent_type == "analyst"]
-            if analysis_results:
-                final_output_parts.append("\n## Analysis Results")
-                for result in analysis_results:
-                    if "executive_summary" in result.result_data:
-                        final_output_parts.append(f"- {result.result_data['executive_summary']}")
-                    if "recommendations" in result.result_data:
-                        final_output_parts.append("### Recommendations:")
-                        for rec in result.result_data["recommendations"]:
-                            final_output_parts.append(f"  - {rec}")
-
-            # Add validation results
+        # If no summary, use validation results
+        if not final_output_parts:
             validation_results = [r for r in completed_tasks if r.agent_type == "validation"]
             if validation_results:
-                final_output_parts.append("\n## Validation Results")
                 for result in validation_results:
-                    if "overall_status" in result.result_data:
-                        final_output_parts.append(f"- Validation Status: {result.result_data['overall_status']}")
                     if "validation_summary" in result.result_data:
-                        final_output_parts.append(f"- {result.result_data['validation_summary']}")
+                        final_output_parts.append(result.result_data["validation_summary"])
 
-            final_output = "\n".join(final_output_parts) if final_output_parts else "No results generated"
+        # If no validation, use analysis results
+        if not final_output_parts:
+            analysis_results = [r for r in completed_tasks if r.agent_type == "analyst"]
+            if analysis_results:
+                for result in analysis_results:
+                    if "executive_summary" in result.result_data:
+                        final_output_parts.append(result.result_data["executive_summary"])
+
+        final_output = "\n".join(final_output_parts) if final_output_parts else "No results generated"
 
         # Add error information if any
         if failed_tasks or timeout_tasks:
@@ -273,19 +264,4 @@ class TaskManager:
         
         return "Result generated successfully"
 
-    def _prepare_aggregation_data(self, worker_responses: List[TaskResponse]) -> str:
-        """Prepare aggregation input data from worker task responses"""
-        aggregation_data = []
 
-        for response in worker_responses:
-            task_data = {
-                "agent_type": response.agent_type,
-                "agent_name": response.agent_name,
-                "status": response.status,
-                "execution_time": response.execution_time,
-                "result_data": response.result_data,
-                "error_message": response.error_message
-            }
-            aggregation_data.append(task_data)
-
-        return str(aggregation_data)

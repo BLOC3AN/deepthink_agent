@@ -1,7 +1,6 @@
-from typing import Dict, Any, List, Optional
+from typing import Dict, List, Optional
 from pydantic import BaseModel
 from datetime import datetime
-import uuid
 import asyncio
 from utils.logger import Logger
 
@@ -16,6 +15,7 @@ class TaskRequest(BaseModel):
     task_context: Dict = {}
     priority: str = "medium"
     timeout: int = 300
+    phase: str = "worker"  # "worker", "validation", "summary"
 
 
 class TaskResponse(BaseModel):
@@ -41,21 +41,24 @@ class AgentCommunicator:
         start_time = datetime.now()
         
         try:
-            logger.info(f"Executing task {task_request.task_id} on {task_request.agent_type} agent")
-            
+            logger.info(f"🚀 STARTING task {task_request.task_id} on {task_request.agent_type} agent at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
+
             # Import and instantiate the appropriate agent
             agent = await self._get_agent_instance(task_request.agent_type)
+            logger.info(f"📦 Agent {task_request.agent_type} instantiated for task {task_request.task_id} at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
             
             if not agent:
                 raise Exception(f"Unknown agent type: {task_request.agent_type}")
             
             # Execute the task
+            logger.info(f"⚡ RUNNING agent {task_request.agent_type} for task {task_request.task_id} at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
             result = await agent.run(
                 input_data=task_request.input_data,
                 task_context=task_request.task_context
             )
-            
+
             execution_time = (datetime.now() - start_time).total_seconds()
+            logger.info(f"✅ COMPLETED task {task_request.task_id} ({task_request.agent_type}) in {execution_time:.2f}s at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
             
             return TaskResponse(
                 task_id=task_request.task_id,
@@ -100,20 +103,36 @@ class AgentCommunicator:
     async def execute_tasks_parallel(self, task_requests: List[TaskRequest]) -> List[TaskResponse]:
         """Execute multiple tasks in parallel"""
         logger.info(f"Executing {len(task_requests)} tasks in parallel")
-        
+
         # Create tasks for parallel execution
         tasks = []
-        for task_request in task_requests:
+
+        # Create all tasks first without awaiting
+        for i, task_request in enumerate(task_requests):
+            logger.info(f"Creating parallel task {i+1}: {task_request.task_id} ({task_request.agent_type})")
+
+            # Create task with proper closure
+            def make_task(req):
+                async def execute_with_logging():
+                    logger.info(f"🔥 PARALLEL TASK STARTED: {req.task_id} ({req.agent_type}) at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
+                    result = await self.execute_task(req)
+                    logger.info(f"🔥 PARALLEL TASK FINISHED: {req.task_id} ({req.agent_type}) at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}")
+                    return result
+                return execute_with_logging()
+
             task = asyncio.create_task(
                 asyncio.wait_for(
-                    self.execute_task(task_request),
+                    make_task(task_request),
                     timeout=task_request.timeout
                 )
             )
             tasks.append(task)
-        
+            logger.info(f"✨ Task {i+1} created and scheduled for parallel execution")
+
+        logger.info(f"🚀 Starting parallel execution of {len(tasks)} tasks at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}...")
         # Wait for all tasks to complete
         results = await asyncio.gather(*tasks, return_exceptions=True)
+        logger.info(f"🏁 Parallel execution completed. Processing {len(results)} results at {datetime.now().strftime('%H:%M:%S.%f')[:-3]}...")
         
         # Process results and handle exceptions
         responses = []
@@ -149,9 +168,7 @@ class AgentCommunicator:
             elif agent_type == "validation":
                 from agents.validation_agent import ValidationAgent
                 return ValidationAgent()
-            elif agent_type == "aggregation":
-                from agents.aggregation_agent import AggregationAgent
-                return AggregationAgent()
+
             else:
                 logger.error(f"Unknown agent type: {agent_type}")
                 return None

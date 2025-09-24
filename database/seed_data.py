@@ -89,23 +89,6 @@ def get_agent_cards_seed_data() -> List[Dict]:
             },
             "created_at": datetime.now(),
             "updated_at": datetime.now()
-        },
-        {
-            "id": "aggregation-agent-omega",
-            "name": "Aggregation Agent Omega",
-            "description": "Multi-agent result aggregation and synthesis agent",
-            "type": "aggregation",
-            "status": "active",
-            "version": "1.0.0",
-            "url": "http://aggregation-agent-omega:8085",
-            "capabilities": ["result_synthesis", "multi_agent_aggregation", "comprehensive_summarization"],
-            "parameters": {
-                "max_input_length": 20000,
-                "timeout": 60,
-                "specialization": "general_aggregation"
-            },
-            "created_at": datetime.now(),
-            "updated_at": datetime.now()
         }
     ]
 

@@ -28,8 +28,8 @@ class ValidationAgentOutput(BaseModel):
     validation_results: List[ValidationResult] = Field(..., description="Detailed validation results")
     issues_identified: List[ValidationIssue] = Field(..., description="Issues found during validation")
     recommendations: List[str] = Field(..., description="Recommendations for improvement")
-    sources_checked: List[str] = Field(default=[], description="Sources used for validation")
-    tools_used: List[str] = Field(default=[], description="MCP tools used in validation")
+    sources_checked: Optional[List[str]] = Field(default=[], description="Sources used for validation")
+    tools_used: Optional[List[str]] = Field(default=[], description="MCP tools used in validation")
 
 
 class ValidationAgent:

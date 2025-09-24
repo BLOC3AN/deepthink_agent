@@ -19,8 +19,8 @@ class AnalystAgentOutput(BaseModel):
     key_findings: List[AnalysisInsight] = Field(..., description="List of key analytical findings")
     detailed_analysis: str = Field(..., description="Detailed analysis with explanations")
     recommendations: List[str] = Field(..., description="Actionable recommendations")
-    risk_factors: List[str] = Field(default=[], description="Identified risk factors")
-    tools_used: List[str] = Field(default=[], description="MCP tools used in analysis")
+    risk_factors: Optional[List[str]] = Field(default=[], description="Identified risk factors")
+    tools_used: Optional[List[str]] = Field(default=[], description="MCP tools used in analysis")
 
 
 class AnalystAgent:
@@ -69,23 +69,55 @@ class AnalystAgent:
                 enhanced_input += f"\n\nData Query: {sql_result}"
                 tools_used.append("sql")
             
-            # Generate analysis using LLM
-            llm_response = self.model_with_structure.invoke(
-                self.prompt.format_messages(
-                    input=enhanced_input,
-                    context=str(task_context or {}),
-                    tools_available=str(tools_used)
+            # Generate analysis using LLM with robust error handling
+            try:
+                llm_response = self.model_with_structure.invoke(
+                    self.prompt.format_messages(
+                        input=enhanced_input,
+                        context=str(task_context or {}),
+                        tools_available=str(tools_used)
+                    )
                 )
-            )
 
-            if llm_response is None:
-                raise Exception("LLM returned None response")
+                if llm_response is None:
+                    raise Exception("Structured output returned None")
 
-            response = llm_response.model_dump()
+                response = llm_response.model_dump()
+                logger.info("✅ LLM structured output successful")
 
-            # Add tools used to response
-            response["tools_used"] = tools_used
-            
+            except Exception as structured_error:
+                logger.warning(f"LLM structured output failed: {structured_error}, using fallback")
+
+                # Fallback: Use regular LLM without structured output
+                try:
+                    fallback_response = self.llm.model.invoke(
+                        self.prompt.format_messages(
+                            input=enhanced_input,
+                            context=str(task_context or {}),
+                            tools_available=str(tools_used)
+                        )
+                    )
+
+                    # Parse response manually
+                    content = fallback_response.content if hasattr(fallback_response, 'content') else str(fallback_response)
+
+                    response = {
+                        "executive_summary": content[:300] + "..." if len(content) > 300 else content,
+                        "key_findings": [],
+                        "detailed_analysis": content,
+                        "recommendations": ["Analysis completed using fallback method"],
+                        "risk_factors": [],
+                        "tools_used": tools_used
+                    }
+                    logger.info("✅ Fallback response created successfully")
+
+                except Exception as fallback_error:
+                    logger.error(f"Fallback also failed: {fallback_error}")
+                    raise Exception(f"Both structured and fallback LLM calls failed: {structured_error}")
+
+            # Normalize and validate response
+            response = self._normalize_response(response, tools_used)
+
             logger.info(f"Analysis completed with {len(response.get('key_findings', []))} findings")
             return response
             
@@ -100,3 +132,38 @@ class AnalystAgent:
                 "risk_factors": ["Technical failure in analysis process"],
                 "tools_used": []
             }
+
+    def _normalize_response(self, response: dict, tools_used: list) -> dict:
+        """Normalize and validate response to ensure all fields are properly formatted"""
+
+        # Ensure all required fields exist with proper types
+        normalized = {
+            "executive_summary": response.get("executive_summary", "Analysis completed"),
+            "key_findings": response.get("key_findings", []),
+            "detailed_analysis": response.get("detailed_analysis", "No detailed analysis available"),
+            "recommendations": response.get("recommendations", []),
+            "risk_factors": response.get("risk_factors") or [],  # Handle None case
+            "tools_used": response.get("tools_used") or tools_used  # Handle None case
+        }
+
+        # Ensure lists are actually lists (handle None values)
+        if normalized["key_findings"] is None:
+            normalized["key_findings"] = []
+        if normalized["recommendations"] is None:
+            normalized["recommendations"] = []
+        if normalized["risk_factors"] is None:
+            normalized["risk_factors"] = []
+        if normalized["tools_used"] is None:
+            normalized["tools_used"] = tools_used
+
+        # Ensure strings are actually strings
+        if not isinstance(normalized["executive_summary"], str):
+            normalized["executive_summary"] = str(normalized["executive_summary"])
+        if not isinstance(normalized["detailed_analysis"], str):
+            normalized["detailed_analysis"] = str(normalized["detailed_analysis"])
+
+        # Always include tools_used from actual execution
+        normalized["tools_used"] = tools_used
+
+        logger.info(f"✅ Response normalized: {len(normalized['key_findings'])} findings, {len(normalized['recommendations'])} recommendations")
+        return normalized

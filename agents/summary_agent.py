@@ -10,8 +10,8 @@ logger = Logger(__name__)
 
 class SummaryAgentOutput(BaseModel):
     summary: str = Field(..., description="Summary of the document")
-    key_points: List[str] = Field(default=[], description="Key points from the content")
-    tools_used: List[str] = Field(default=[], description="MCP tools used in summarization")
+    key_points: Optional[List[str]] = Field(default=[], description="Key points from the content")
+    tools_used: Optional[List[str]] = Field(default=[], description="MCP tools used in summarization")
 
 
 class SummaryAgent:

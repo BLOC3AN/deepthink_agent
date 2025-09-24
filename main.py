@@ -5,7 +5,7 @@ from typing import Dict, Any
 # Load environment variables
 load_dotenv()
 
-from agents.intent_agent import PlanningAgent
+from agents.planning_agent import PlanningAgent
 from core.task_manager import TaskManager, ExecutionPlan
 from database.mongodb_client import MongoDBClient
 from database.seed_data import seed_database
