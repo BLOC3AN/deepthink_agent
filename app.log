@@ -1,0 +1,1029 @@
+2025-09-24 16:22:44,905 - __main__ - INFO - ✅ 🚀 Starting Phase 1 Integration Tests
+2025-09-24 16:22:44,905 - __main__ - INFO - ✅ 🧪 Testing MongoDB connection...
+2025-09-24 16:22:44,920 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:22:44,920 - __main__ - INFO - ✅ 🌱 Seeding database...
+2025-09-24 16:22:44,987 - database.seed_data - INFO - ✅ Seeded 5 agent cards
+2025-09-24 16:22:44,989 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:22:44,989 - __main__ - INFO - ✅ ✅ Retrieved 5 agent cards
+2025-09-24 16:22:44,989 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:22:44,989 - __main__ - INFO - ✅ 🧪 Testing MCP Tools...
+2025-09-24 16:22:44,989 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:22:44,989 - mcp_server.mock_tools - INFO - ✅ SQL Tool executed: SELECT * FROM users
+2025-09-24 16:22:44,989 - __main__ - INFO - ✅ SQL Tool result: SQL Tool được gọi với query: 'SELECT * FROM users', params: {'limit': 10}
+2025-09-24 16:22:44,989 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: AI trends 2024
+2025-09-24 16:22:44,990 - __main__ - INFO - ✅ Web Search result: Web Search Tool được gọi với query: 'AI trends 2024', limit: 5
+2025-09-24 16:22:44,990 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: machine learning algorithms
+2025-09-24 16:22:44,990 - __main__ - INFO - ✅ RAG Tool result: RAG Tool được gọi với query: 'machine learning algorithms', top_k: 3
+2025-09-24 16:22:44,990 - __main__ - INFO - ✅ ✅ MCP Tools test completed
+2025-09-24 16:22:44,990 - __main__ - INFO - ✅ 🧪 Testing Planning Agent...
+2025-09-24 16:22:45,024 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:22:45,024 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:22:45,025 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:22:45,028 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:22:45,029 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:22:46,744 - database.mongodb_client - INFO - ✅ Created session: 68d3b866ad639fabd454bacf
+2025-09-24 16:22:46,744 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:22:46,745 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:22:46,745 - __main__ - INFO - ✅ ✅ Planning Agent result:
+2025-09-24 16:22:46,745 - __main__ - INFO - ✅    - Detected intents: ['document_summarization', 'market_analysis']
+2025-09-24 16:22:46,745 - __main__ - INFO - ✅    - Number of tasks: 2
+2025-09-24 16:22:46,745 - __main__ - INFO - ✅    - Execution strategy: parallel
+2025-09-24 16:22:46,745 - __main__ - INFO - ✅    - Estimated time: 70 seconds
+2025-09-24 16:22:46,745 - __main__ - INFO - ✅ 🎉 All Phase 1 tests passed!
+2025-09-24 16:28:43,141 - __main__ - INFO - ✅ 🚀 Starting DeepModel Multi-Agent System
+2025-09-24 16:28:43,142 - __main__ - INFO - ✅ 🧪 Starting End-to-End Integration Test
+2025-09-24 16:28:43,170 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:28:43,170 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:28:43,171 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:28:43,171 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:28:43,171 - __main__ - INFO - ✅ DeepModel System initialized
+2025-09-24 16:28:43,171 - __main__ - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:28:43,197 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:43,198 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:28:43,199 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:43,199 - __main__ - INFO - ✅ System initialization completed
+2025-09-24 16:28:43,199 - __main__ - INFO - ✅ 📝 Test Case 1: Multi-intent request
+2025-09-24 16:28:43,199 - __main__ - INFO - ✅ Processing request: Analyze the market trends for AI technology in 2024, summarize the key findings, and validate the ac...
+2025-09-24 16:28:43,199 - __main__ - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:28:43,199 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:28:43,201 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:43,202 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:28:45,547 - database.mongodb_client - INFO - ✅ Created session: 68d3b9cd43e887bee6c993e4
+2025-09-24 16:28:45,547 - agents.intent_agent - INFO - ✅ Planning completed with 3 tasks
+2025-09-24 16:28:45,547 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:45,547 - __main__ - INFO - ✅ 📋 Execution plan created with 3 tasks
+2025-09-24 16:28:45,547 - __main__ - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:28:45,547 - core.task_manager - INFO - ✅ Executing plan for session 68d3b9cd43e887bee6c993e4
+2025-09-24 16:28:45,567 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:45,587 - database.mongodb_client - INFO - ✅ Created task: 68d3b9cd43e887bee6c993e6
+2025-09-24 16:28:45,588 - database.mongodb_client - INFO - ✅ Created task: 68d3b9cd43e887bee6c993e7
+2025-09-24 16:28:45,589 - database.mongodb_client - INFO - ✅ Created task: 68d3b9cd43e887bee6c993e8
+2025-09-24 16:28:45,589 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:28:45,597 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:28:45,597 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:28:45,598 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:28:45,598 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:28:45,598 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: market trends analysis Analyze the market trends for AI technology in 202
+2025-09-24 16:28:49,861 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:28:49,861 - core.agent_communicator - INFO - ✅ Executing task 2 on summary agent
+2025-09-24 16:28:49,868 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:28:49,868 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:28:49,869 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:28:49,869 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:28:50,887 - agents.summary_agent - ERROR - ❌ Error running summary agent: 'NoneType' object has no attribute 'model_dump'
+2025-09-24 16:28:50,887 - core.agent_communicator - INFO - ✅ Executing task 3 on validation agent
+2025-09-24 16:28:50,912 - prompts.build_context - INFO - ✅ Loading validation prompt successfully!
+2025-09-24 16:28:50,914 - prompts.build_context - INFO - ✅ Building validation prompt successfully!
+2025-09-24 16:28:50,933 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:28:50,933 - agents.validation_agent - INFO - ✅ Running validation agent
+2025-09-24 16:28:50,933 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: fact check verify Validate the accuracy of the data sources used in 
+2025-09-24 16:28:50,935 - mcp_server.mock_tools - INFO - ✅ SQL Tool executed: SELECT * FROM validation_sources WHERE status = 'active'
+2025-09-24 16:28:52,087 - agents.validation_agent - ERROR - ❌ Error running validation agent: 'NoneType' object has no attribute 'model_dump'
+2025-09-24 16:28:52,092 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:28:52,094 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:28:52,096 - database.mongodb_client - INFO - ✅ Updated task 3 status to completed
+2025-09-24 16:28:52,096 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3b9cd43e887bee6c993e4
+2025-09-24 16:28:52,096 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅ ✅ Test Case 1 PASSED
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅    - Session ID: 68d3b9cd43e887bee6c993e4
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅    - Detected intents: ['market_analysis', 'document_summarization', 'data_validation']
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅    - Execution strategy: sequential
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅    - Overall status: completed
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅    - Total execution time: 6.55s
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅    - Final output length: 842 characters
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅ 📝 Test Case 2: Single-intent request
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅ Processing request: Please summarize this technical document about machine learning algorithms...
+2025-09-24 16:28:52,097 - __main__ - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:28:52,097 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:28:52,102 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:52,103 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:28:53,254 - database.mongodb_client - INFO - ✅ Created session: 68d3b9d543e887bee6c993ea
+2025-09-24 16:28:53,256 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:28:53,256 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:53,257 - __main__ - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:28:53,257 - __main__ - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:28:53,257 - core.task_manager - INFO - ✅ Executing plan for session 68d3b9d543e887bee6c993ea
+2025-09-24 16:28:53,268 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:53,270 - database.mongodb_client - INFO - ✅ Created task: 68d3b9d543e887bee6c993ec
+2025-09-24 16:28:53,270 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:28:53,274 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:28:53,274 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:28:53,276 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:28:53,276 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:28:54,387 - agents.summary_agent - ERROR - ❌ Error running summary agent: 'NoneType' object has no attribute 'model_dump'
+2025-09-24 16:28:54,389 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:28:54,389 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3b9d543e887bee6c993ea
+2025-09-24 16:28:54,390 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:54,390 - __main__ - INFO - ✅ ✅ Test Case 2 PASSED
+2025-09-24 16:28:54,390 - __main__ - INFO - ✅    - Detected intents: ['document_summarization']
+2025-09-24 16:28:54,390 - __main__ - INFO - ✅    - Task count: 1
+2025-09-24 16:28:54,390 - __main__ - INFO - ✅ 🎉 All End-to-End tests PASSED!
+2025-09-24 16:28:54,390 - __main__ - INFO - ✅ ✅ System is ready for production use!
+2025-09-24 16:28:54,397 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:28:54,397 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:28:54,399 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:28:54,399 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:28:54,399 - __main__ - INFO - ✅ DeepModel System initialized
+2025-09-24 16:28:54,399 - __main__ - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:28:54,404 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:54,406 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:28:54,407 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:54,407 - __main__ - INFO - ✅ System initialization completed
+2025-09-24 16:28:54,407 - __main__ - INFO - ✅ Processing request: Analyze customer feedback data and provide actionable insights...
+2025-09-24 16:28:54,407 - __main__ - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:28:54,407 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:28:54,414 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:54,415 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:28:55,656 - database.mongodb_client - INFO - ✅ Created session: 68d3b9d743e887bee6c993ef
+2025-09-24 16:28:55,656 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:28:55,658 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:28:55,658 - __main__ - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:28:55,658 - __main__ - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:28:55,658 - core.task_manager - INFO - ✅ Executing plan for session 68d3b9d743e887bee6c993ef
+2025-09-24 16:28:55,662 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:28:55,662 - database.mongodb_client - INFO - ✅ Created task: 68d3b9d743e887bee6c993f1
+2025-09-24 16:28:55,662 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:28:55,667 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:28:55,667 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:28:55,668 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:28:55,668 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:28:55,668 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: analytical insights customer feedback data
+2025-09-24 16:28:58,979 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:28:58,982 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:28:58,982 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3b9d743e887bee6c993ef
+2025-09-24 16:28:58,983 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:33:48,969 - __main__ - INFO - ✅ 🚀 Starting DeepModel Multi-Agent System
+2025-09-24 16:33:48,969 - __main__ - INFO - ✅ 🧪 Starting End-to-End Integration Test
+2025-09-24 16:33:48,978 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:33:48,979 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:33:48,980 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:33:48,980 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:33:48,980 - __main__ - INFO - ✅ DeepModel System initialized
+2025-09-24 16:33:48,980 - __main__ - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:33:49,005 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:33:49,006 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:33:49,006 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:33:49,007 - __main__ - INFO - ✅ System initialization completed
+2025-09-24 16:33:49,007 - __main__ - INFO - ✅ 📝 Test Case 1: Multi-intent request
+2025-09-24 16:33:49,007 - __main__ - INFO - ✅ Processing request: Analyze the market trends for AI technology in 2024, summarize the key findings, and validate the ac...
+2025-09-24 16:33:49,007 - __main__ - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:33:49,007 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:33:49,010 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:33:49,010 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:33:51,416 - database.mongodb_client - INFO - ✅ Created session: 68d3baff04e79c83a2d4dccc
+2025-09-24 16:33:51,416 - agents.intent_agent - INFO - ✅ Planning completed with 3 tasks
+2025-09-24 16:33:51,417 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:33:51,417 - __main__ - INFO - ✅ 📋 Execution plan created with 3 tasks
+2025-09-24 16:33:51,417 - __main__ - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:33:51,417 - core.task_manager - INFO - ✅ Executing plan for session 68d3baff04e79c83a2d4dccc
+2025-09-24 16:33:51,437 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:33:51,437 - database.mongodb_client - INFO - ✅ Created task: 68d3baff04e79c83a2d4dcce
+2025-09-24 16:33:51,438 - database.mongodb_client - INFO - ✅ Created task: 68d3baff04e79c83a2d4dccf
+2025-09-24 16:33:51,439 - database.mongodb_client - INFO - ✅ Created task: 68d3baff04e79c83a2d4dcd0
+2025-09-24 16:33:51,439 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:33:51,450 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:33:51,450 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:33:51,451 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:33:51,451 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:33:51,451 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: market trends analysis Analyze the market trends for AI technology in 202
+2025-09-24 16:33:56,523 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:33:56,524 - core.agent_communicator - INFO - ✅ Executing task 2 on summary agent
+2025-09-24 16:33:56,536 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:33:56,537 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:33:56,538 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:33:56,538 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:33:57,594 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:33:57,595 - core.agent_communicator - INFO - ✅ Executing task 3 on validation agent
+2025-09-24 16:33:57,614 - prompts.build_context - INFO - ✅ Loading validation prompt successfully!
+2025-09-24 16:33:57,614 - prompts.build_context - INFO - ✅ Building validation prompt successfully!
+2025-09-24 16:33:57,618 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:33:57,618 - agents.validation_agent - INFO - ✅ Running validation agent
+2025-09-24 16:33:57,618 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: fact check verify Validate the accuracy of the data sources used in 
+2025-09-24 16:33:57,618 - mcp_server.mock_tools - INFO - ✅ SQL Tool executed: SELECT * FROM validation_sources WHERE status = 'active'
+2025-09-24 16:33:58,582 - agents.validation_agent - ERROR - ❌ Error running validation agent: LLM returned None response
+2025-09-24 16:33:58,587 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:33:58,589 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:33:58,591 - database.mongodb_client - INFO - ✅ Updated task 3 status to completed
+2025-09-24 16:33:58,591 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3baff04e79c83a2d4dccc
+2025-09-24 16:33:58,592 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅ ✅ Test Case 1 PASSED
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅    - Session ID: 68d3baff04e79c83a2d4dccc
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅    - Detected intents: ['market_analysis', 'document_summarization', 'data_validation']
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅    - Execution strategy: sequential
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅    - Overall status: completed
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅    - Total execution time: 7.17s
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅    - Final output length: 1078 characters
+2025-09-24 16:33:58,592 - __main__ - INFO - ✅ 📝 Test Case 2: Single-intent request
+2025-09-24 16:33:58,593 - __main__ - INFO - ✅ Processing request: Please summarize this technical document about machine learning algorithms...
+2025-09-24 16:33:58,593 - __main__ - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:33:58,593 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:33:58,599 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:33:58,601 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:33:59,642 - database.mongodb_client - INFO - ✅ Created session: 68d3bb0704e79c83a2d4dcd2
+2025-09-24 16:33:59,643 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:33:59,644 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:33:59,644 - __main__ - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:33:59,644 - __main__ - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:33:59,644 - core.task_manager - INFO - ✅ Executing plan for session 68d3bb0704e79c83a2d4dcd2
+2025-09-24 16:33:59,651 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:33:59,654 - database.mongodb_client - INFO - ✅ Created task: 68d3bb0704e79c83a2d4dcd4
+2025-09-24 16:33:59,654 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:33:59,658 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:33:59,659 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:33:59,660 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:33:59,660 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:34:00,628 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:34:00,631 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:34:00,632 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bb0704e79c83a2d4dcd2
+2025-09-24 16:34:00,633 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:34:00,633 - __main__ - INFO - ✅ ✅ Test Case 2 PASSED
+2025-09-24 16:34:00,633 - __main__ - INFO - ✅    - Detected intents: ['document_summarization']
+2025-09-24 16:34:00,633 - __main__ - INFO - ✅    - Task count: 1
+2025-09-24 16:34:00,633 - __main__ - INFO - ✅ 🎉 All End-to-End tests PASSED!
+2025-09-24 16:34:00,634 - __main__ - INFO - ✅ ✅ System is ready for production use!
+2025-09-24 16:34:00,642 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:34:00,643 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:34:00,645 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:34:00,645 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:34:00,645 - __main__ - INFO - ✅ DeepModel System initialized
+2025-09-24 16:34:00,645 - __main__ - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:34:00,651 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:34:00,652 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:34:00,653 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:34:00,653 - __main__ - INFO - ✅ System initialization completed
+2025-09-24 16:34:00,653 - __main__ - INFO - ✅ Processing request: Analyze customer feedback data and provide actionable insights...
+2025-09-24 16:34:00,653 - __main__ - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:34:00,653 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:34:00,657 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:34:00,658 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:34:02,184 - database.mongodb_client - INFO - ✅ Created session: 68d3bb0a04e79c83a2d4dcd7
+2025-09-24 16:34:02,185 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:34:02,185 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:34:02,186 - __main__ - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:34:02,186 - __main__ - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:34:02,186 - core.task_manager - INFO - ✅ Executing plan for session 68d3bb0a04e79c83a2d4dcd7
+2025-09-24 16:34:02,192 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:34:02,194 - database.mongodb_client - INFO - ✅ Created task: 68d3bb0a04e79c83a2d4dcd9
+2025-09-24 16:34:02,194 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:34:02,200 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:34:02,201 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:34:02,202 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:34:02,203 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:34:02,203 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: analytical insights customer feedback data
+2025-09-24 16:34:05,308 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:34:05,312 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:34:05,312 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bb0a04e79c83a2d4dcd7
+2025-09-24 16:34:05,312 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:35:18,902 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:35:18,903 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:35:18,903 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:35:18,904 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:35:18,904 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 16:35:56,086 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm đi...
+2025-09-24 16:35:56,087 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:35:56,177 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:35:56,179 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:35:56,179 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:35:56,179 - main - INFO - ✅ System initialization completed
+2025-09-24 16:35:56,179 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm đi...
+2025-09-24 16:35:56,179 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:35:56,179 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:35:56,182 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:35:56,182 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:35:57,658 - database.mongodb_client - INFO - ✅ Created session: 68d3bb7df76a031c84e780da
+2025-09-24 16:35:57,658 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:35:57,659 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:35:57,659 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:35:57,660 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:35:57,660 - core.task_manager - INFO - ✅ Executing plan for session 68d3bb7df76a031c84e780da
+2025-09-24 16:35:57,677 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:35:57,677 - database.mongodb_client - INFO - ✅ Created task: 68d3bb7df76a031c84e780dc
+2025-09-24 16:35:57,678 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:35:57,691 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:35:57,692 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:35:57,693 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:35:57,693 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:35:59,564 - agents.analyst_agent - INFO - ✅ Analysis completed with 1 findings
+2025-09-24 16:35:59,568 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:35:59,568 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bb7df76a031c84e780da
+2025-09-24 16:35:59,569 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:35:59,570 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:36:11,102 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt đi...
+2025-09-24 16:36:11,103 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:36:11,112 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:36:11,115 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:36:11,116 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:36:11,116 - main - INFO - ✅ System initialization completed
+2025-09-24 16:36:11,117 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt đi...
+2025-09-24 16:36:11,117 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:36:11,117 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:36:11,123 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:36:11,126 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:36:12,778 - database.mongodb_client - INFO - ✅ Created session: 68d3bb8cf76a031c84e780df
+2025-09-24 16:36:12,779 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:36:12,780 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:36:12,781 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:36:12,781 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:36:12,781 - core.task_manager - INFO - ✅ Executing plan for session 68d3bb8cf76a031c84e780df
+2025-09-24 16:36:12,795 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:36:12,798 - database.mongodb_client - INFO - ✅ Created task: 68d3bb8cf76a031c84e780e1
+2025-09-24 16:36:12,798 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:36:12,810 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:36:12,811 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:36:12,813 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:36:12,814 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:36:16,010 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:36:16,012 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:36:16,013 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bb8cf76a031c84e780df
+2025-09-24 16:36:16,013 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:36:16,013 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:36:35,324 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:36:35,325 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:36:35,333 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:36:35,335 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:36:35,336 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:36:35,336 - main - INFO - ✅ System initialization completed
+2025-09-24 16:36:35,336 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:36:35,337 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:36:35,337 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:36:35,344 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:36:35,345 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:36:36,681 - database.mongodb_client - INFO - ✅ Created session: 68d3bba4f76a031c84e780e4
+2025-09-24 16:36:36,681 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:36:36,682 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:36:36,682 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:36:36,682 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:36:36,682 - core.task_manager - INFO - ✅ Executing plan for session 68d3bba4f76a031c84e780e4
+2025-09-24 16:36:36,688 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:36:36,690 - database.mongodb_client - INFO - ✅ Created task: 68d3bba4f76a031c84e780e6
+2025-09-24 16:36:36,690 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:36:36,709 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:36:36,710 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:36:36,710 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:36:36,710 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:36:43,329 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:36:43,341 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:36:43,342 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bba4f76a031c84e780e4
+2025-09-24 16:36:43,347 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:36:43,348 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:37:40,041 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:37:40,047 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:37:40,064 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:37:40,070 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:37:40,073 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:37:40,073 - main - INFO - ✅ System initialization completed
+2025-09-24 16:37:40,073 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:37:40,073 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:37:40,074 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:37:40,110 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:37:40,125 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:37:42,470 - database.mongodb_client - INFO - ✅ Created session: 68d3bbe6f76a031c84e780e9
+2025-09-24 16:37:42,470 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:37:42,471 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:37:42,471 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:37:42,471 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:37:42,472 - core.task_manager - INFO - ✅ Executing plan for session 68d3bbe6f76a031c84e780e9
+2025-09-24 16:37:42,481 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:37:42,483 - database.mongodb_client - INFO - ✅ Created task: 68d3bbe6f76a031c84e780eb
+2025-09-24 16:37:42,483 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:37:42,504 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:37:42,506 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:37:42,508 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:37:42,508 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:37:43,956 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:37:43,964 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:37:43,965 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bbe6f76a031c84e780e9
+2025-09-24 16:37:43,966 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:37:43,967 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:39:21,829 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:39:21,832 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:39:21,854 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:39:21,858 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:39:21,858 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:39:21,859 - main - INFO - ✅ System initialization completed
+2025-09-24 16:39:21,859 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:39:21,859 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:39:21,859 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:39:21,863 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:39:21,865 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:39:23,162 - database.mongodb_client - INFO - ✅ Created session: 68d3bc4bf76a031c84e780ee
+2025-09-24 16:39:23,162 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:39:23,162 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:39:23,163 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:39:23,163 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:39:23,163 - core.task_manager - INFO - ✅ Executing plan for session 68d3bc4bf76a031c84e780ee
+2025-09-24 16:39:23,168 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:39:23,169 - database.mongodb_client - INFO - ✅ Created task: 68d3bc4bf76a031c84e780f0
+2025-09-24 16:39:23,169 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:39:23,174 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:39:23,174 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:39:23,175 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:39:23,175 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:39:27,643 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:39:27,646 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:39:27,647 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bc4bf76a031c84e780ee
+2025-09-24 16:39:27,648 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:39:27,648 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:39:43,789 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:39:43,789 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:39:43,790 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:39:43,790 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:39:43,790 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 16:40:03,283 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:40:03,284 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:40:03,369 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:40:03,370 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:40:03,371 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:40:03,371 - main - INFO - ✅ System initialization completed
+2025-09-24 16:40:03,371 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:40:03,371 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:40:03,371 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:40:03,375 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:40:03,376 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:40:05,009 - database.mongodb_client - INFO - ✅ Created session: 68d3bc75d467ca922dceada8
+2025-09-24 16:40:05,009 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:40:05,010 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:40:05,010 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:40:05,010 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:40:05,010 - core.task_manager - INFO - ✅ Executing plan for session 68d3bc75d467ca922dceada8
+2025-09-24 16:40:05,021 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:40:05,025 - database.mongodb_client - INFO - ✅ Created task: 68d3bc75d467ca922dceadaa
+2025-09-24 16:40:05,025 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:40:05,031 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:40:05,031 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:40:05,032 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:40:05,032 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:40:09,949 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:40:09,953 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:40:09,953 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bc75d467ca922dceada8
+2025-09-24 16:40:09,954 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:40:09,954 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:42:13,578 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:42:13,578 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:42:13,579 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:42:13,579 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:42:13,579 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 16:42:32,541 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:42:32,543 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:42:32,641 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:42:32,642 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:42:32,642 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:42:32,642 - main - INFO - ✅ System initialization completed
+2025-09-24 16:42:32,642 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 10 bước cơ bản đi...
+2025-09-24 16:42:32,642 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:42:32,642 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:42:32,646 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:42:32,647 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:42:33,898 - database.mongodb_client - INFO - ✅ Created session: 68d3bd09b7cf1a0ef117527e
+2025-09-24 16:42:33,898 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:42:33,899 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:42:33,899 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:42:33,899 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:42:33,899 - core.task_manager - INFO - ✅ Executing plan for session 68d3bd09b7cf1a0ef117527e
+2025-09-24 16:42:33,922 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:42:33,923 - database.mongodb_client - INFO - ✅ Created task: 68d3bd09b7cf1a0ef1175280
+2025-09-24 16:42:33,923 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:42:33,934 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:42:33,935 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:42:33,936 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:42:33,936 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:42:38,951 - agents.summary_agent - ERROR - ❌ Error running summary agent: LLM returned None response
+2025-09-24 16:42:38,956 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:42:38,956 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bd09b7cf1a0ef117527e
+2025-09-24 16:42:38,957 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:42:38,958 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:42:47,624 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt...
+2025-09-24 16:42:47,626 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:42:47,640 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:42:47,643 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:42:47,643 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:42:47,643 - main - INFO - ✅ System initialization completed
+2025-09-24 16:42:47,644 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt...
+2025-09-24 16:42:47,644 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:42:47,644 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:42:47,649 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:42:47,650 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:42:48,795 - database.mongodb_client - INFO - ✅ Created session: 68d3bd18b7cf1a0ef1175283
+2025-09-24 16:42:48,795 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:42:48,796 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:42:48,796 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:42:48,796 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:42:48,796 - core.task_manager - INFO - ✅ Executing plan for session 68d3bd18b7cf1a0ef1175283
+2025-09-24 16:42:48,802 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:42:48,803 - database.mongodb_client - INFO - ✅ Created task: 68d3bd18b7cf1a0ef1175285
+2025-09-24 16:42:48,804 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:42:48,825 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:42:48,825 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:42:48,827 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:42:48,827 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:42:50,347 - agents.analyst_agent - INFO - ✅ Analysis completed with 1 findings
+2025-09-24 16:42:50,349 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:42:50,349 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bd18b7cf1a0ef1175283
+2025-09-24 16:42:50,350 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:42:50,350 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:43:11,520 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:43:11,520 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:43:11,521 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:43:11,521 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:43:11,521 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 16:43:12,927 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:43:12,927 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:43:12,990 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:43:12,991 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:43:12,991 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:43:12,991 - main - INFO - ✅ System initialization completed
+2025-09-24 16:43:12,991 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:43:12,991 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:43:12,991 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:43:12,995 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:43:12,995 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:43:14,362 - database.mongodb_client - INFO - ✅ Created session: 68d3bd32a61548defd9d9f21
+2025-09-24 16:43:14,363 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:43:14,364 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:43:14,364 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:43:14,364 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:43:14,364 - core.task_manager - INFO - ✅ Executing plan for session 68d3bd32a61548defd9d9f21
+2025-09-24 16:43:14,404 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:43:14,405 - database.mongodb_client - INFO - ✅ Created task: 68d3bd32a61548defd9d9f23
+2025-09-24 16:43:14,405 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:43:14,413 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:43:14,413 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:43:14,414 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:43:14,414 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:43:15,532 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:43:19,070 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:43:19,075 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:43:19,076 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bd32a61548defd9d9f21
+2025-09-24 16:43:19,077 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:43:19,077 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:43:58,686 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:43:58,688 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:43:58,703 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:43:58,707 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:43:58,707 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:43:58,708 - main - INFO - ✅ System initialization completed
+2025-09-24 16:43:58,708 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:43:58,708 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:43:58,708 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:43:58,712 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:43:58,713 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:43:59,959 - database.mongodb_client - INFO - ✅ Created session: 68d3bd5fa61548defd9d9f26
+2025-09-24 16:43:59,959 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:43:59,960 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:43:59,960 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:43:59,961 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:43:59,961 - core.task_manager - INFO - ✅ Executing plan for session 68d3bd5fa61548defd9d9f26
+2025-09-24 16:43:59,972 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:43:59,974 - database.mongodb_client - INFO - ✅ Created task: 68d3bd5fa61548defd9d9f28
+2025-09-24 16:43:59,974 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:43:59,988 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:43:59,989 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:43:59,991 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:43:59,991 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:44:03,580 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:44:06,329 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:44:06,333 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:44:06,334 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bd5fa61548defd9d9f26
+2025-09-24 16:44:06,336 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:44:06,336 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:44:49,068 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:44:49,069 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:44:49,070 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:44:49,070 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:44:49,070 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 16:44:53,491 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:44:53,493 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:44:53,563 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:44:53,565 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:44:53,565 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:44:53,565 - main - INFO - ✅ System initialization completed
+2025-09-24 16:44:53,565 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:44:53,565 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:44:53,565 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:44:53,568 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:44:53,569 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:44:54,934 - database.mongodb_client - INFO - ✅ Created session: 68d3bd963fb810663e3d6d5f
+2025-09-24 16:44:54,934 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:44:54,935 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:44:54,935 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:44:54,935 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:44:54,935 - core.task_manager - INFO - ✅ Executing plan for session 68d3bd963fb810663e3d6d5f
+2025-09-24 16:44:54,952 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:44:54,954 - database.mongodb_client - INFO - ✅ Created task: 68d3bd963fb810663e3d6d61
+2025-09-24 16:44:54,954 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:44:54,963 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:44:54,963 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:44:54,963 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:44:54,964 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:44:57,177 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:45:00,546 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:45:00,552 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:45:00,552 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bd963fb810663e3d6d5f
+2025-09-24 16:45:00,554 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:45:00,554 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:45:56,290 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:45:56,291 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:45:56,301 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:45:56,302 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:45:56,304 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:45:56,304 - main - INFO - ✅ System initialization completed
+2025-09-24 16:45:56,304 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:45:56,304 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:45:56,304 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:45:56,307 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:45:56,308 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:45:57,549 - database.mongodb_client - INFO - ✅ Created session: 68d3bdd53fb810663e3d6d64
+2025-09-24 16:45:57,549 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:45:57,550 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:45:57,550 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:45:57,550 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:45:57,550 - core.task_manager - INFO - ✅ Executing plan for session 68d3bdd53fb810663e3d6d64
+2025-09-24 16:45:57,556 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:45:57,558 - database.mongodb_client - INFO - ✅ Created task: 68d3bdd53fb810663e3d6d66
+2025-09-24 16:45:57,558 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:45:57,569 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:45:57,570 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:45:57,571 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:45:57,572 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:45:58,772 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:46:01,625 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:46:01,630 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:46:01,630 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bdd53fb810663e3d6d64
+2025-09-24 16:46:01,632 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:01,634 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:46:26,755 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:46:26,756 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:46:26,772 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:46:26,777 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:46:26,780 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:26,780 - main - INFO - ✅ System initialization completed
+2025-09-24 16:46:26,780 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:46:26,780 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:46:26,780 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:46:26,784 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:46:26,785 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:46:27,951 - database.mongodb_client - INFO - ✅ Created session: 68d3bdf33fb810663e3d6d69
+2025-09-24 16:46:27,951 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:46:27,951 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:27,951 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:46:27,952 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:46:27,952 - core.task_manager - INFO - ✅ Executing plan for session 68d3bdf33fb810663e3d6d69
+2025-09-24 16:46:27,958 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:46:27,959 - database.mongodb_client - INFO - ✅ Created task: 68d3bdf33fb810663e3d6d6b
+2025-09-24 16:46:27,959 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:46:27,966 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:46:27,967 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:46:27,968 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:46:27,968 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:46:29,225 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:46:29,231 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:46:29,231 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bdf33fb810663e3d6d69
+2025-09-24 16:46:29,234 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:29,234 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:46:32,162 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:46:32,163 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:46:32,170 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:46:32,172 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:46:32,173 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:32,173 - main - INFO - ✅ System initialization completed
+2025-09-24 16:46:32,174 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:46:32,174 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:46:32,174 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:46:32,181 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:46:32,184 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:46:33,342 - database.mongodb_client - INFO - ✅ Created session: 68d3bdf93fb810663e3d6d6e
+2025-09-24 16:46:33,343 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:46:33,345 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:33,345 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:46:33,346 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:46:33,346 - core.task_manager - INFO - ✅ Executing plan for session 68d3bdf93fb810663e3d6d6e
+2025-09-24 16:46:33,355 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:46:33,357 - database.mongodb_client - INFO - ✅ Created task: 68d3bdf93fb810663e3d6d70
+2025-09-24 16:46:33,357 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:46:33,368 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:46:33,369 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:46:33,369 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:46:33,370 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:46:34,262 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:46:37,115 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:46:37,120 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:46:37,121 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bdf93fb810663e3d6d6e
+2025-09-24 16:46:37,124 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:46:37,124 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:47:13,296 - __main__ - INFO - ✅ 🚀 New request received: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:47:13,299 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:47:13,403 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:47:13,413 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:47:13,414 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:47:13,414 - main - INFO - ✅ System initialization completed
+2025-09-24 16:47:13,414 - main - INFO - ✅ Processing request: Tôi đói quá, bạn hãy chỉ tôi cách làm mì ý sốt bò bằm bằng tiếng việt với 5 bước cơ bản...
+2025-09-24 16:47:13,414 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:47:13,414 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:47:13,419 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:47:13,420 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:47:14,705 - database.mongodb_client - INFO - ✅ Created session: 68d3be223fb810663e3d6d73
+2025-09-24 16:47:14,706 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-24 16:47:14,706 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:47:14,706 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
+2025-09-24 16:47:14,706 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:47:14,706 - core.task_manager - INFO - ✅ Executing plan for session 68d3be223fb810663e3d6d73
+2025-09-24 16:47:14,714 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:47:14,715 - database.mongodb_client - INFO - ✅ Created task: 68d3be223fb810663e3d6d75
+2025-09-24 16:47:14,715 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:47:14,723 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:47:14,723 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:47:14,724 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:47:14,724 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:47:16,590 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:47:19,502 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:47:19,505 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:47:19,505 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3be223fb810663e3d6d73
+2025-09-24 16:47:19,506 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:47:19,506 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:49:43,307 - __main__ - INFO - ✅ 🚀 New request received: Cho tôi thông tin về Hồ Chí Minh và chỉ tôi phân tích định luật Newton2...
+2025-09-24 16:49:43,309 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:49:43,383 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:49:43,385 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:49:43,385 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:49:43,385 - main - INFO - ✅ System initialization completed
+2025-09-24 16:49:43,385 - main - INFO - ✅ Processing request: Cho tôi thông tin về Hồ Chí Minh và chỉ tôi phân tích định luật Newton2...
+2025-09-24 16:49:43,385 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:49:43,385 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:49:43,388 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:49:43,391 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:49:45,059 - database.mongodb_client - INFO - ✅ Created session: 68d3beb93fb810663e3d6d78
+2025-09-24 16:49:45,059 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:49:45,060 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:49:45,061 - main - INFO - ✅ 📋 Execution plan created with 2 tasks
+2025-09-24 16:49:45,061 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:49:45,061 - core.task_manager - INFO - ✅ Executing plan for session 68d3beb93fb810663e3d6d78
+2025-09-24 16:49:45,073 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:49:45,075 - database.mongodb_client - INFO - ✅ Created task: 68d3beb93fb810663e3d6d7a
+2025-09-24 16:49:45,076 - database.mongodb_client - INFO - ✅ Created task: 68d3beb93fb810663e3d6d7b
+2025-09-24 16:49:45,076 - core.agent_communicator - INFO - ✅ Executing 2 tasks in parallel
+2025-09-24 16:49:45,077 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:49:45,091 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:49:45,091 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:49:45,092 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:49:45,092 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:49:46,065 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
+2025-09-24 16:49:59,649 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 16:49:59,649 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 16:49:59,651 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 16:49:59,651 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 16:49:59,651 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 16:50:06,022 - __main__ - INFO - ✅ 🚀 New request received: Cho tôi thông tin về Hồ Chí Minh và chỉ tôi phân tích định luật Newton2...
+2025-09-24 16:50:06,023 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:50:06,126 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:50:06,127 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:50:06,128 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:50:06,128 - main - INFO - ✅ System initialization completed
+2025-09-24 16:50:06,128 - main - INFO - ✅ Processing request: Cho tôi thông tin về Hồ Chí Minh và chỉ tôi phân tích định luật Newton2...
+2025-09-24 16:50:06,128 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:50:06,128 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:50:06,131 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:50:06,132 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:50:08,024 - database.mongodb_client - INFO - ✅ Created session: 68d3bed05a695ec7647b032a
+2025-09-24 16:50:08,025 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:50:08,026 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:50:08,026 - main - INFO - ✅ 📋 Execution plan created with 2 tasks
+2025-09-24 16:50:08,026 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:50:08,026 - core.task_manager - INFO - ✅ Executing plan for session 68d3bed05a695ec7647b032a
+2025-09-24 16:50:08,047 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:50:08,048 - database.mongodb_client - INFO - ✅ Created task: 68d3bed05a695ec7647b032c
+2025-09-24 16:50:08,049 - database.mongodb_client - INFO - ✅ Created task: 68d3bed05a695ec7647b032d
+2025-09-24 16:50:08,049 - core.agent_communicator - INFO - ✅ Executing 2 tasks in parallel
+2025-09-24 16:50:08,050 - core.agent_communicator - INFO - ✅ Executing task 1 on summary agent
+2025-09-24 16:50:08,060 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-24 16:50:08,061 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-24 16:50:08,062 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:50:08,062 - agents.summary_agent - INFO - ✅ Running summary agent
+2025-09-24 16:50:08,062 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: summarization context Thông tin về Hồ Chí Minh
+2025-09-24 16:50:09,025 - agents.summary_agent - INFO - ✅ Summary completed successfully!
+2025-09-24 16:50:09,026 - core.agent_communicator - INFO - ✅ Executing task 2 on analyst agent
+2025-09-24 16:50:09,041 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:50:09,042 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:50:09,044 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:50:09,044 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:50:12,606 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
+2025-09-24 16:50:12,607 - core.agent_communicator - INFO - ✅ Parallel execution completed. 2 succeeded, 0 failed
+2025-09-24 16:50:12,610 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:50:12,612 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:50:12,612 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bed05a695ec7647b032a
+2025-09-24 16:50:12,613 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:50:12,613 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:51:05,674 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ?...
+2025-09-24 16:51:05,675 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:51:05,692 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:51:05,695 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:51:05,697 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:51:05,697 - main - INFO - ✅ System initialization completed
+2025-09-24 16:51:05,698 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ?...
+2025-09-24 16:51:05,698 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:51:05,698 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:51:05,704 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:51:05,705 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:51:07,567 - database.mongodb_client - INFO - ✅ Created session: 68d3bf0b5a695ec7647b0330
+2025-09-24 16:51:07,568 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:51:07,569 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:51:07,569 - main - INFO - ✅ 📋 Execution plan created with 2 tasks
+2025-09-24 16:51:07,569 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:51:07,570 - core.task_manager - INFO - ✅ Executing plan for session 68d3bf0b5a695ec7647b0330
+2025-09-24 16:51:07,579 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:51:07,584 - database.mongodb_client - INFO - ✅ Created task: 68d3bf0b5a695ec7647b0332
+2025-09-24 16:51:07,586 - database.mongodb_client - INFO - ✅ Created task: 68d3bf0b5a695ec7647b0333
+2025-09-24 16:51:07,586 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:51:07,604 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:51:07,605 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:51:07,607 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:51:07,607 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:51:10,849 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
+2025-09-24 16:51:10,850 - core.agent_communicator - INFO - ✅ Executing task 2 on analyst agent
+2025-09-24 16:51:10,858 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:51:10,859 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:51:10,862 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:51:10,862 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:51:16,076 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:51:16,079 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:51:16,081 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:51:16,081 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3bf0b5a695ec7647b0330
+2025-09-24 16:51:16,082 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:51:16,082 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:54:01,265 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ? Trả...
+2025-09-24 16:54:01,267 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:54:01,285 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:54:01,289 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:54:01,290 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:54:01,290 - main - INFO - ✅ System initialization completed
+2025-09-24 16:54:01,290 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ? Trả...
+2025-09-24 16:54:01,290 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:54:01,290 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:54:01,297 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:54:01,299 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:54:02,969 - agents.intent_agent - ERROR - ❌ Error in planning agent: LLM returned None response
+2025-09-24 16:54:02,973 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:54:02,973 - __main__ - INFO - ✅ ✅ Request completed with status: failed
+2025-09-24 16:54:21,434 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ? Trả...
+2025-09-24 16:54:21,435 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:54:21,459 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:54:21,463 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:54:21,464 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:54:21,464 - main - INFO - ✅ System initialization completed
+2025-09-24 16:54:21,464 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ? Trả...
+2025-09-24 16:54:21,464 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:54:21,464 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:54:21,468 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:54:21,469 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:54:23,277 - agents.intent_agent - ERROR - ❌ Error in planning agent: LLM returned None response
+2025-09-24 16:54:23,279 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:54:23,279 - __main__ - INFO - ✅ ✅ Request completed with status: failed
+2025-09-24 16:54:52,700 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ? Trả...
+2025-09-24 16:54:52,701 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:54:52,718 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:54:52,721 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:54:52,722 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:54:52,722 - main - INFO - ✅ System initialization completed
+2025-09-24 16:54:52,722 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ? Trả...
+2025-09-24 16:54:52,723 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:54:52,723 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:54:52,727 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:54:52,728 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:54:54,681 - agents.intent_agent - ERROR - ❌ Error in planning agent: LLM returned None response
+2025-09-24 16:54:54,683 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:54:54,683 - __main__ - INFO - ✅ ✅ Request completed with status: failed
+2025-09-24 16:55:27,175 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ?...
+2025-09-24 16:55:27,176 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:55:27,194 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:55:27,198 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:55:27,199 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:55:27,199 - main - INFO - ✅ System initialization completed
+2025-09-24 16:55:27,200 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào ?...
+2025-09-24 16:55:27,200 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:55:27,200 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:55:27,207 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:55:27,209 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:55:29,026 - database.mongodb_client - INFO - ✅ Created session: 68d3c0115a695ec7647b033c
+2025-09-24 16:55:29,027 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:55:29,028 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:55:29,028 - main - INFO - ✅ 📋 Execution plan created with 2 tasks
+2025-09-24 16:55:29,028 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:55:29,028 - core.task_manager - INFO - ✅ Executing plan for session 68d3c0115a695ec7647b033c
+2025-09-24 16:55:29,038 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:55:29,041 - database.mongodb_client - INFO - ✅ Created task: 68d3c0115a695ec7647b033e
+2025-09-24 16:55:29,042 - database.mongodb_client - INFO - ✅ Created task: 68d3c0115a695ec7647b033f
+2025-09-24 16:55:29,043 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:55:29,056 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:55:29,057 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:55:29,059 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:55:29,059 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:55:32,028 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
+2025-09-24 16:55:32,029 - core.agent_communicator - INFO - ✅ Executing task 2 on analyst agent
+2025-09-24 16:55:32,034 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:55:32,035 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:55:32,037 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:55:32,037 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:55:35,657 - agents.analyst_agent - INFO - ✅ Analysis completed with 1 findings
+2025-09-24 16:55:35,661 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:55:35,665 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:55:35,665 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3c0115a695ec7647b033c
+2025-09-24 16:55:35,666 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:55:35,666 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:55:41,030 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào? Trả ...
+2025-09-24 16:55:41,031 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:55:41,039 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:55:41,042 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:55:41,043 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:55:41,043 - main - INFO - ✅ System initialization completed
+2025-09-24 16:55:41,043 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào? Trả ...
+2025-09-24 16:55:41,043 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:55:41,043 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:55:41,049 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:55:41,050 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:55:42,807 - database.mongodb_client - INFO - ✅ Created session: 68d3c01e5a695ec7647b0342
+2025-09-24 16:55:42,808 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:55:42,809 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:55:42,809 - main - INFO - ✅ 📋 Execution plan created with 2 tasks
+2025-09-24 16:55:42,809 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:55:42,809 - core.task_manager - INFO - ✅ Executing plan for session 68d3c01e5a695ec7647b0342
+2025-09-24 16:55:42,821 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:55:42,822 - database.mongodb_client - INFO - ✅ Created task: 68d3c01e5a695ec7647b0344
+2025-09-24 16:55:42,823 - database.mongodb_client - INFO - ✅ Created task: 68d3c01e5a695ec7647b0345
+2025-09-24 16:55:42,823 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:55:42,829 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:55:42,829 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:55:42,832 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:55:42,832 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:55:46,993 - agents.analyst_agent - INFO - ✅ Analysis completed with 3 findings
+2025-09-24 16:55:46,993 - core.agent_communicator - INFO - ✅ Executing task 2 on analyst agent
+2025-09-24 16:55:46,997 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:55:46,997 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:55:46,999 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:55:46,999 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:55:50,045 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
+2025-09-24 16:55:50,049 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:55:50,052 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:55:50,052 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3c01e5a695ec7647b0342
+2025-09-24 16:55:50,052 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:55:50,053 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 16:56:06,892 - __main__ - INFO - ✅ 🚀 New request received: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào? Trả ...
+2025-09-24 16:56:06,892 - main - INFO - ✅ Initializing DeepModel System...
+2025-09-24 16:56:06,902 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:56:06,904 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:56:06,905 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:56:06,905 - main - INFO - ✅ System initialization completed
+2025-09-24 16:56:06,905 - main - INFO - ✅ Processing request: Phân tích cho tôi tại sao khi nóng thì uống nước thấy mát và làm sao để luộc trứng gà lòng đào? Trả ...
+2025-09-24 16:56:06,905 - main - INFO - ✅ 🧠 Starting planning phase...
+2025-09-24 16:56:06,906 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-24 16:56:06,912 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:56:06,913 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 16:56:08,629 - database.mongodb_client - INFO - ✅ Created session: 68d3c0385a695ec7647b0348
+2025-09-24 16:56:08,629 - agents.intent_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-24 16:56:08,630 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:56:08,631 - main - INFO - ✅ 📋 Execution plan created with 2 tasks
+2025-09-24 16:56:08,631 - main - INFO - ✅ 🚀 Starting task execution...
+2025-09-24 16:56:08,631 - core.task_manager - INFO - ✅ Executing plan for session 68d3c0385a695ec7647b0348
+2025-09-24 16:56:08,642 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 16:56:08,644 - database.mongodb_client - INFO - ✅ Created task: 68d3c0385a695ec7647b034a
+2025-09-24 16:56:08,647 - database.mongodb_client - INFO - ✅ Created task: 68d3c0385a695ec7647b034b
+2025-09-24 16:56:08,647 - core.agent_communicator - INFO - ✅ Executing task 1 on analyst agent
+2025-09-24 16:56:08,658 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:56:08,659 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:56:08,661 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:56:08,662 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:56:12,499 - agents.analyst_agent - INFO - ✅ Analysis completed with 1 findings
+2025-09-24 16:56:12,500 - core.agent_communicator - INFO - ✅ Executing task 2 on analyst agent
+2025-09-24 16:56:12,505 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
+2025-09-24 16:56:12,506 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
+2025-09-24 16:56:12,508 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
+2025-09-24 16:56:12,508 - agents.analyst_agent - INFO - ✅ Running analyst agent
+2025-09-24 16:56:15,127 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
+2025-09-24 16:56:15,131 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
+2025-09-24 16:56:15,148 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
+2025-09-24 16:56:15,148 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3c0385a695ec7647b0348
+2025-09-24 16:56:15,149 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 16:56:15,149 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-24 17:04:52,518 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 17:04:52,518 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 17:04:52,519 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 17:04:52,519 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 17:04:52,520 - main - INFO - ✅ DeepModel System initialized
+2025-09-24 17:05:21,697 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 17:05:38,366 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 17:05:38,372 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
+2025-09-24 17:05:38,373 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 17:05:52,251 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 17:05:52,262 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 17:06:05,822 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 17:06:05,823 - database.mongodb_client - INFO - ✅ Retrieved 0 active agent cards
+2025-09-24 17:06:05,823 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 17:06:46,382 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 17:06:46,417 - __main__ - INFO - ✅ Seeded 6 agent cards
+2025-09-24 17:06:46,418 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 17:06:54,159 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
+2025-09-24 17:06:54,160 - database.mongodb_client - INFO - ✅ Retrieved 6 active agent cards
+2025-09-24 17:06:54,161 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
+2025-09-24 17:07:10,298 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-24 17:07:10,298 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-24 17:07:10,300 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
+2025-09-24 17:07:10,300 - core.task_manager - INFO - ✅ Task Manager initialized
+2025-09-24 17:07:10,300 - main - INFO - ✅ DeepModel System initialized
