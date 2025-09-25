@@ -293,3 +293,142 @@ result_data
 2025-09-25 15:09:14,106 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
 2025-09-25 15:09:14,107 - agent-hub.server - INFO - ✅ Task completed: completed
 2025-09-25 17:40:55,653 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 17:54:11,390 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 17:54:49,188 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 17:55:45,455 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/agent-hub/schema
+2025-09-25 17:55:45,507 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 17:55:45,508 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 17:55:45,511 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 17:55:45,512 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/agent-hub/schema
+2025-09-25 17:55:45,513 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 17:55:45,513 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 17:55:47,925 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis', 'cooking_instruction', 'calculation']
+2025-09-25 17:55:47,927 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 3 tasks
+2025-09-25 17:55:47,927 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 3 tasks
+2025-09-25 17:55:47,928 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 3 tasks
+2025-09-25 17:55:47,965 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 17:55:48,010 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:55:48,010 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:55:48,013 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:55:48,013 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:55:49,569 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:55:49,570 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:55:49,580 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 17:55:49,588 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:55:49,588 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:55:49,590 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:55:49,591 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:55:51,484 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:55:51,485 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:55:51,492 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 17:55:51,498 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:55:51,499 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:55:51,501 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:55:51,502 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:55:53,089 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:55:53,090 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:57:06,367 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 17:57:06,385 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:57:06,386 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:57:06,394 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:57:06,394 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:57:07,433 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:57:07,433 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:57:07,435 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 17:57:07,438 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:57:07,439 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:57:07,440 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:57:07,440 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:57:08,587 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:57:08,588 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:57:08,595 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 17:57:08,602 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:57:08,603 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:57:08,605 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:57:08,606 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:57:09,813 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:57:09,814 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:58:32,815 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 17:58:32,886 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:58:32,887 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:58:32,899 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:58:32,899 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:58:33,932 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:58:33,932 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:58:33,934 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 17:58:33,940 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:58:33,940 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:58:33,941 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:58:33,941 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:58:34,943 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:58:34,946 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:58:34,952 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 17:58:34,959 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 17:58:34,960 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 17:58:34,962 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 17:58:34,963 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 17:58:36,060 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 17:58:36,062 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 18:00:00,026 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 18:00:00,028 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 18:00:00,036 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 18:00:00,039 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/agent-hub/schema
+2025-09-25 18:00:00,041 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 18:00:00,042 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 18:00:02,534 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis', 'cooking_instruction', 'calculation']
+2025-09-25 18:00:02,535 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 3 tasks
+2025-09-25 18:00:02,536 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 3 tasks
+2025-09-25 18:00:02,537 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 3 tasks
+2025-09-25 18:00:15,426 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/agent-hub/schema
+2025-09-25 18:00:15,465 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 18:00:15,466 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 18:00:15,468 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 18:00:15,469 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/agent-hub/schema
+2025-09-25 18:00:15,470 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 18:00:15,471 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 18:00:18,054 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis', 'cooking_instruction', 'calculation']
+2025-09-25 18:00:18,057 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 3 tasks
+2025-09-25 18:00:18,057 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 3 tasks
+2025-09-25 18:00:18,058 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 3 tasks
+2025-09-25 18:00:18,092 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 18:00:18,105 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 18:00:18,108 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 18:00:18,114 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 18:00:18,115 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 18:00:19,080 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 18:00:19,082 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 18:00:19,088 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 18:00:19,094 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 18:00:19,095 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 18:00:19,097 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 18:00:19,098 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 18:00:21,217 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 18:00:21,218 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 18:00:21,222 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 18:00:21,226 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 18:00:21,227 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 18:00:21,228 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 18:00:21,229 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 18:00:22,301 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 18:00:22,302 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 18:00:22,328 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 18:00:22,334 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 18:00:22,335 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 18:00:22,338 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 18:00:22,338 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 18:00:23,472 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 18:00:23,472 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 18:00:29,431 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 18:00:29,438 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 18:00:29,441 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 18:00:29,444 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 18:00:29,444 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 18:00:31,540 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 18:00:31,541 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 18:00:58,372 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 18:00:58,395 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 18:00:58,396 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 18:00:58,401 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 18:00:58,402 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 18:00:59,625 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 18:00:59,626 - agent-hub.server - INFO - ✅ Task completed: completed
