@@ -1,0 +1,30 @@
+{
+    "name": "Summary Agent",
+    "description": "Specialized summary agent for technical documents",
+    "status": "active",
+    "agent_type": "summary",
+    "capabilities": ["technical_summary", "document_analysis"],
+    "arg_schema": {
+        "type": "object",
+        "properties": {
+            "task_id": {
+                "type": "string",
+                "description": "Unique task ID"
+            },
+            "agent_type": {
+                "type": "string",
+                "description": "Type of agent: summary, analyst, validation"
+            },
+            "agent_name": {
+                "type": "string",
+                "description": "Selected agent name from agent cards"
+            },
+            "input_data": {
+                "type": "string",
+                "description": "Data to be processed by agent"
+            }
+        }
+    },
+    "url": "http://127.0.0.1:8000/task/summary",
+    "method": "POST"
+}

@@ -1,623 +1,295 @@
-2025-09-24 17:48:47,210 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:48:47,211 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:48:47,211 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:55:56,168 - __main__ - INFO - ✅ 🚀 Starting DeepModel Multi-Agent System
-2025-09-24 17:55:56,168 - __main__ - INFO - ✅ 🧪 Starting End-to-End Integration Test
-2025-09-24 17:55:56,186 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
-2025-09-24 17:55:56,186 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
-2025-09-24 17:55:56,188 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
-2025-09-24 17:55:56,188 - core.task_manager - INFO - ✅ Task Manager initialized
-2025-09-24 17:55:56,188 - __main__ - INFO - ✅ DeepModel System initialized
-2025-09-24 17:55:56,188 - __main__ - INFO - ✅ Initializing DeepModel System...
-2025-09-24 17:55:56,212 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:55:56,213 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:55:56,214 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:55:56,214 - __main__ - INFO - ✅ System initialization completed
-2025-09-24 17:55:56,214 - __main__ - INFO - ✅ 📝 Test Case 1: Multi-intent request
-2025-09-24 17:55:56,214 - __main__ - INFO - ✅ Processing request: Analyze the market trends for AI technology in 2024, summarize the key findings, and validate the ac...
-2025-09-24 17:55:56,214 - __main__ - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 17:55:56,214 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 17:55:56,216 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:55:56,217 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:55:56,217 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 17:55:58,344 - agents.intent_agent - INFO - ✅ 🎯 LLM detected intents: ['market_analysis', 'document_summarization', 'data_validation']
-2025-09-24 17:55:58,345 - agents.intent_agent - INFO - ✅ ✅ Created 3 tasks with phase-based execution
-2025-09-24 17:55:58,355 - database.mongodb_client - INFO - ✅ Created session: 68d3ce3ee5ef22736ca6fb4f
-2025-09-24 17:55:58,355 - agents.intent_agent - INFO - ✅ Planning completed with 3 tasks
-2025-09-24 17:55:58,356 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:55:58,356 - __main__ - INFO - ✅ 📋 Execution plan created with 3 tasks
-2025-09-24 17:55:58,356 - __main__ - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 17:55:58,356 - core.task_manager - INFO - ✅ Executing plan for session 68d3ce3ee5ef22736ca6fb4f
-2025-09-24 17:55:58,389 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:55:58,390 - database.mongodb_client - INFO - ✅ Created task: 68d3ce3ee5ef22736ca6fb51
-2025-09-24 17:55:58,390 - database.mongodb_client - INFO - ✅ Created task: 68d3ce3ee5ef22736ca6fb52
-2025-09-24 17:55:58,390 - database.mongodb_client - INFO - ✅ Created task: 68d3ce3ee5ef22736ca6fb53
-2025-09-24 17:55:58,390 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 3 worker tasks in parallel
-2025-09-24 17:55:58,390 - core.agent_communicator - INFO - ✅ Executing 3 tasks in parallel
-2025-09-24 17:55:58,390 - core.agent_communicator - INFO - ✅ Creating parallel task 1: 1 (analyst)
-2025-09-24 17:55:58,390 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 17:55:58,390 - core.agent_communicator - INFO - ✅ Creating parallel task 2: 2 (summary)
-2025-09-24 17:55:58,390 - core.agent_communicator - INFO - ✅ ✨ Task 2 created and scheduled for parallel execution
-2025-09-24 17:55:58,390 - core.agent_communicator - INFO - ✅ Creating parallel task 3: 3 (validation)
-2025-09-24 17:55:58,391 - core.agent_communicator - INFO - ✅ ✨ Task 3 created and scheduled for parallel execution
-2025-09-24 17:55:58,391 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 3 tasks at 17:55:58.391...
-2025-09-24 17:55:58,391 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: 1 (analyst) at 17:55:58.391
-2025-09-24 17:55:58,391 - core.agent_communicator - INFO - ✅ 🚀 STARTING task 1 on analyst agent at 17:55:58.391
-2025-09-24 17:55:58,397 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 17:55:58,398 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 17:55:58,399 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:55:58,399 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task 1 at 17:55:58.399
-2025-09-24 17:55:58,399 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task 1 at 17:55:58.399
-2025-09-24 17:55:58,399 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 17:55:58,399 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: market trends analysis Analyze the market trends for AI technology in 202
-2025-09-24 17:55:59,258 - agents.analyst_agent - ERROR - ❌ Error running analyst agent: LLM returned None response
-2025-09-24 17:55:59,259 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task 1 (analyst) in 0.87s at 17:55:59.259
-2025-09-24 17:55:59,259 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: 1 (analyst) at 17:55:59.259
-2025-09-24 17:55:59,259 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: 2 (summary) at 17:55:59.259
-2025-09-24 17:55:59,259 - core.agent_communicator - INFO - ✅ 🚀 STARTING task 2 on summary agent at 17:55:59.259
-2025-09-24 17:55:59,269 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
-2025-09-24 17:55:59,269 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
-2025-09-24 17:55:59,270 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:55:59,270 - core.agent_communicator - INFO - ✅ 📦 Agent summary instantiated for task 2 at 17:55:59.270
-2025-09-24 17:55:59,270 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent summary for task 2 at 17:55:59.270
-2025-09-24 17:55:59,270 - agents.summary_agent - INFO - ✅ Running summary agent
-2025-09-24 17:55:59,270 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: summarization context Summarize the key findings of the AI market trend analysis in 2024
-2025-09-24 17:56:00,509 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
-2025-09-24 17:56:04,998 - agents.summary_agent - INFO - ✅ Summary completed successfully!
-2025-09-24 17:56:04,999 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task 2 (summary) in 5.74s at 17:56:04.999
-2025-09-24 17:56:04,999 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: 2 (summary) at 17:56:04.999
-2025-09-24 17:56:04,999 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: 3 (validation) at 17:56:04.999
-2025-09-24 17:56:04,999 - core.agent_communicator - INFO - ✅ 🚀 STARTING task 3 on validation agent at 17:56:04.999
-2025-09-24 17:56:05,012 - prompts.build_context - INFO - ✅ Loading validation prompt successfully!
-2025-09-24 17:56:05,012 - prompts.build_context - INFO - ✅ Building validation prompt successfully!
-2025-09-24 17:56:05,014 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:56:05,014 - core.agent_communicator - INFO - ✅ 📦 Agent validation instantiated for task 3 at 17:56:05.014
-2025-09-24 17:56:05,014 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent validation for task 3 at 17:56:05.014
-2025-09-24 17:56:05,014 - agents.validation_agent - INFO - ✅ Running validation agent
-2025-09-24 17:56:05,014 - mcp_server.mock_tools - INFO - ✅ Web Search Tool executed: fact check verify Validate the accuracy of the data sources used in 
-2025-09-24 17:56:05,014 - mcp_server.mock_tools - INFO - ✅ SQL Tool executed: SELECT * FROM validation_sources WHERE status = 'active'
-2025-09-24 17:56:06,506 - agents.validation_agent - INFO - ✅ Validation completed with status: UNCERTAIN
-2025-09-24 17:56:06,506 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task 3 (validation) in 1.51s at 17:56:06.506
-2025-09-24 17:56:06,506 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: 3 (validation) at 17:56:06.506
-2025-09-24 17:56:06,506 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 3 results at 17:56:06.506...
-2025-09-24 17:56:06,506 - core.agent_communicator - INFO - ✅ Parallel execution completed. 3 succeeded, 0 failed
-2025-09-24 17:56:06,514 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
-2025-09-24 17:56:06,515 - database.mongodb_client - INFO - ✅ Updated task 2 status to completed
-2025-09-24 17:56:06,516 - database.mongodb_client - INFO - ✅ Updated task 3 status to completed
-2025-09-24 17:56:06,516 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3ce3ee5ef22736ca6fb4f
-2025-09-24 17:56:06,516 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:56:06,516 - __main__ - INFO - ✅ ✅ Test Case 1 PASSED
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅    - Session ID: 68d3ce3ee5ef22736ca6fb4f
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅    - Detected intents: ['market_analysis', 'document_summarization', 'data_validation']
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅    - Execution strategy: parallel
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅    - Overall status: completed
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅    - Total execution time: 8.16s
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅    - Final output length: 503 characters
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅ 📝 Test Case 2: Single-intent request
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅ Processing request: Please summarize this technical document about machine learning algorithms...
-2025-09-24 17:56:06,517 - __main__ - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 17:56:06,517 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 17:56:06,522 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:56:06,525 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:56:06,525 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 17:56:07,631 - agents.intent_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization']
-2025-09-24 17:56:07,631 - agents.intent_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 17:56:07,634 - database.mongodb_client - INFO - ✅ Created session: 68d3ce47e5ef22736ca6fb55
-2025-09-24 17:56:07,635 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 17:56:07,635 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:56:07,636 - __main__ - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 17:56:07,636 - __main__ - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 17:56:07,636 - core.task_manager - INFO - ✅ Executing plan for session 68d3ce47e5ef22736ca6fb55
-2025-09-24 17:56:07,643 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:56:07,644 - database.mongodb_client - INFO - ✅ Created task: 68d3ce47e5ef22736ca6fb57
-2025-09-24 17:56:07,645 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 17:56:07,645 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 17:56:07,645 - core.agent_communicator - INFO - ✅ Creating parallel task 1: 1 (summary)
-2025-09-24 17:56:07,645 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 17:56:07,645 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 17:56:07.645...
-2025-09-24 17:56:07,645 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: 1 (summary) at 17:56:07.645
-2025-09-24 17:56:07,645 - core.agent_communicator - INFO - ✅ 🚀 STARTING task 1 on summary agent at 17:56:07.645
-2025-09-24 17:56:07,651 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
-2025-09-24 17:56:07,652 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
-2025-09-24 17:56:07,653 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:56:07,653 - core.agent_communicator - INFO - ✅ 📦 Agent summary instantiated for task 1 at 17:56:07.653
-2025-09-24 17:56:07,653 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent summary for task 1 at 17:56:07.653
-2025-09-24 17:56:07,653 - agents.summary_agent - INFO - ✅ Running summary agent
-2025-09-24 17:56:07,653 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: summarization context technical document about machine learning algorithms
-2025-09-24 17:56:09,319 - agents.summary_agent - INFO - ✅ Summary completed successfully!
-2025-09-24 17:56:09,319 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task 1 (summary) in 1.67s at 17:56:09.319
-2025-09-24 17:56:09,320 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: 1 (summary) at 17:56:09.320
-2025-09-24 17:56:09,320 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 17:56:09.320...
-2025-09-24 17:56:09,320 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 17:56:09,323 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
-2025-09-24 17:56:09,324 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3ce47e5ef22736ca6fb55
-2025-09-24 17:56:09,326 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:56:09,326 - __main__ - INFO - ✅ ✅ Test Case 2 PASSED
-2025-09-24 17:56:09,326 - __main__ - INFO - ✅    - Detected intents: ['document_summarization']
-2025-09-24 17:56:09,326 - __main__ - INFO - ✅    - Task count: 1
-2025-09-24 17:56:09,326 - __main__ - INFO - ✅ 🎉 All End-to-End tests PASSED!
-2025-09-24 17:56:09,327 - __main__ - INFO - ✅ ✅ System is ready for production use!
-2025-09-24 17:56:09,336 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
-2025-09-24 17:56:09,337 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
-2025-09-24 17:56:09,339 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
-2025-09-24 17:56:09,339 - core.task_manager - INFO - ✅ Task Manager initialized
-2025-09-24 17:56:09,339 - __main__ - INFO - ✅ DeepModel System initialized
-2025-09-24 17:56:09,339 - __main__ - INFO - ✅ Initializing DeepModel System...
-2025-09-24 17:56:09,343 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:56:09,344 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:56:09,345 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:56:09,345 - __main__ - INFO - ✅ System initialization completed
-2025-09-24 17:56:09,345 - __main__ - INFO - ✅ Processing request: Analyze customer feedback data and provide actionable insights...
-2025-09-24 17:56:09,345 - __main__ - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 17:56:09,345 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 17:56:09,350 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:56:09,350 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:56:09,350 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 17:56:11,247 - agents.intent_agent - INFO - ✅ 🎯 LLM detected intents: ['customer_feedback_analysis', 'actionable_insights']
-2025-09-24 17:56:11,247 - agents.intent_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 17:56:11,249 - database.mongodb_client - INFO - ✅ Created session: 68d3ce4be5ef22736ca6fb5a
-2025-09-24 17:56:11,250 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 17:56:11,250 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:56:11,250 - __main__ - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 17:56:11,250 - __main__ - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 17:56:11,251 - core.task_manager - INFO - ✅ Executing plan for session 68d3ce4be5ef22736ca6fb5a
-2025-09-24 17:56:11,256 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:56:11,257 - database.mongodb_client - INFO - ✅ Created task: 68d3ce4be5ef22736ca6fb5c
-2025-09-24 17:56:11,257 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 17:56:11,257 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 17:56:11,258 - core.agent_communicator - INFO - ✅ Creating parallel task 1: 1 (analyst)
-2025-09-24 17:56:11,258 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 17:56:11,258 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 17:56:11.258...
-2025-09-24 17:56:11,258 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: 1 (analyst) at 17:56:11.258
-2025-09-24 17:56:11,258 - core.agent_communicator - INFO - ✅ 🚀 STARTING task 1 on analyst agent at 17:56:11.258
-2025-09-24 17:56:11,263 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 17:56:11,263 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 17:56:11,265 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:56:11,265 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task 1 at 17:56:11.265
-2025-09-24 17:56:11,265 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task 1 at 17:56:11.265
-2025-09-24 17:56:11,266 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 17:56:11,266 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: analytical insights customer feedback data
-2025-09-24 17:56:13,410 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
-2025-09-24 17:56:13,410 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task 1 (analyst) in 2.15s at 17:56:13.410
-2025-09-24 17:56:13,411 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: 1 (analyst) at 17:56:13.411
-2025-09-24 17:56:13,411 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 17:56:13.411...
-2025-09-24 17:56:13,411 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 17:56:13,412 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
-2025-09-24 17:56:13,412 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3ce4be5ef22736ca6fb5a
-2025-09-24 17:56:13,412 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:00,324 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
-2025-09-24 17:57:00,324 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
-2025-09-24 17:57:00,326 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
-2025-09-24 17:57:00,326 - core.task_manager - INFO - ✅ Task Manager initialized
-2025-09-24 17:57:00,326 - main - INFO - ✅ DeepModel System initialized
-2025-09-24 17:57:06,229 - __main__ - INFO - ✅ 🚀 New request received: ❌ Cần validation logic thực...
-2025-09-24 17:57:06,229 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 17:57:06,308 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:57:06,309 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:57:06,310 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:06,310 - main - INFO - ✅ System initialization completed
-2025-09-24 17:57:06,310 - main - INFO - ✅ Processing request: ❌ Cần validation logic thực...
-2025-09-24 17:57:06,310 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 17:57:06,310 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 17:57:06,312 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:57:06,313 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:57:06,313 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 17:57:07,657 - agents.intent_agent - INFO - ✅ 🎯 LLM detected intents: ['data_validation']
-2025-09-24 17:57:07,658 - agents.intent_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 17:57:07,662 - database.mongodb_client - INFO - ✅ Created session: 68d3ce83388d6c169482988f
-2025-09-24 17:57:07,662 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 17:57:07,663 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:07,663 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 17:57:07,663 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 17:57:07,664 - core.task_manager - INFO - ✅ Executing plan for session 68d3ce83388d6c169482988f
-2025-09-24 17:57:07,682 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:57:07,683 - database.mongodb_client - INFO - ✅ Created task: 68d3ce83388d6c1694829891
-2025-09-24 17:57:07,683 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 17:57:07,683 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 17:57:07,683 - core.agent_communicator - INFO - ✅ Creating parallel task 1: validation-001 (validation)
-2025-09-24 17:57:07,683 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 17:57:07,683 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 17:57:07.683...
-2025-09-24 17:57:07,684 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: validation-001 (validation) at 17:57:07.684
-2025-09-24 17:57:07,684 - core.agent_communicator - INFO - ✅ 🚀 STARTING task validation-001 on validation agent at 17:57:07.684
-2025-09-24 17:57:07,693 - prompts.build_context - INFO - ✅ Loading validation prompt successfully!
-2025-09-24 17:57:07,694 - prompts.build_context - INFO - ✅ Building validation prompt successfully!
-2025-09-24 17:57:07,696 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:57:07,696 - core.agent_communicator - INFO - ✅ 📦 Agent validation instantiated for task validation-001 at 17:57:07.696
-2025-09-24 17:57:07,696 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent validation for task validation-001 at 17:57:07.696
-2025-09-24 17:57:07,696 - agents.validation_agent - INFO - ✅ Running validation agent
-2025-09-24 17:57:08,625 - agents.validation_agent - ERROR - ❌ Error running validation agent: LLM returned None response
-2025-09-24 17:57:08,625 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task validation-001 (validation) in 0.94s at 17:57:08.625
-2025-09-24 17:57:08,625 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: validation-001 (validation) at 17:57:08.625
-2025-09-24 17:57:08,627 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 17:57:08.627...
-2025-09-24 17:57:08,628 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 17:57:08,635 - database.mongodb_client - INFO - ✅ Updated task validation-001 status to completed
-2025-09-24 17:57:08,635 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3ce83388d6c169482988f
-2025-09-24 17:57:08,637 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:08,637 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 17:57:27,606 - __main__ - INFO - ✅ 🚀 New request received: Chào em...
-2025-09-24 17:57:27,607 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 17:57:27,618 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:57:27,621 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:57:27,622 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:27,622 - main - INFO - ✅ System initialization completed
-2025-09-24 17:57:27,622 - main - INFO - ✅ Processing request: Chào em...
-2025-09-24 17:57:27,622 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 17:57:27,623 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 17:57:27,628 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:57:27,629 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:57:27,629 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 17:57:28,224 - agents.intent_agent - WARNING - ⚠️ LLM structured output failed: LLM returned None response, using fallback logic
-2025-09-24 17:57:28,225 - agents.intent_agent - INFO - ✅ 🔧 Creating tasks based on available agents...
-2025-09-24 17:57:28,225 - agents.intent_agent - INFO - ✅ ✅ Created 3 tasks with phase-based execution
-2025-09-24 17:57:28,229 - database.mongodb_client - INFO - ✅ Created session: 68d3ce98388d6c1694829894
-2025-09-24 17:57:28,229 - agents.intent_agent - INFO - ✅ Planning completed with 3 tasks
-2025-09-24 17:57:28,231 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:28,231 - main - INFO - ✅ 📋 Execution plan created with 3 tasks
-2025-09-24 17:57:28,231 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 17:57:28,231 - core.task_manager - INFO - ✅ Executing plan for session 68d3ce98388d6c1694829894
-2025-09-24 17:57:28,239 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:57:28,240 - database.mongodb_client - INFO - ✅ Created task: 68d3ce98388d6c1694829896
-2025-09-24 17:57:28,242 - database.mongodb_client - INFO - ✅ Created task: 68d3ce98388d6c1694829897
-2025-09-24 17:57:28,244 - database.mongodb_client - INFO - ✅ Created task: 68d3ce98388d6c1694829898
-2025-09-24 17:57:28,244 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 17:57:28,244 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 17:57:28,244 - core.agent_communicator - INFO - ✅ Creating parallel task 1: worker-analyst (analyst)
-2025-09-24 17:57:28,244 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 17:57:28,244 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 17:57:28.244...
-2025-09-24 17:57:28,245 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: worker-analyst (analyst) at 17:57:28.245
-2025-09-24 17:57:28,245 - core.agent_communicator - INFO - ✅ 🚀 STARTING task worker-analyst on analyst agent at 17:57:28.245
-2025-09-24 17:57:28,261 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 17:57:28,261 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 17:57:28,262 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:57:28,262 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task worker-analyst at 17:57:28.262
-2025-09-24 17:57:28,263 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task worker-analyst at 17:57:28.263
-2025-09-24 17:57:28,263 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 17:57:30,630 - agents.analyst_agent - INFO - ✅ Analysis completed with 1 findings
-2025-09-24 17:57:30,630 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task worker-analyst (analyst) in 2.39s at 17:57:30.630
-2025-09-24 17:57:30,631 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: worker-analyst (analyst) at 17:57:30.631
-2025-09-24 17:57:30,633 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 17:57:30.633...
-2025-09-24 17:57:30,633 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 17:57:30,633 - core.task_manager - INFO - ✅ ✅ Phase 2: Executing 1 validation tasks
-2025-09-24 17:57:30,633 - core.agent_communicator - INFO - ✅ 🚀 STARTING task validation on validation agent at 17:57:30.633
-2025-09-24 17:57:30,644 - prompts.build_context - INFO - ✅ Loading validation prompt successfully!
-2025-09-24 17:57:30,645 - prompts.build_context - INFO - ✅ Building validation prompt successfully!
-2025-09-24 17:57:30,648 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:57:30,649 - core.agent_communicator - INFO - ✅ 📦 Agent validation instantiated for task validation at 17:57:30.649
-2025-09-24 17:57:30,649 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent validation for task validation at 17:57:30.649
-2025-09-24 17:57:30,649 - agents.validation_agent - INFO - ✅ Running validation agent
-2025-09-24 17:57:32,246 - agents.validation_agent - INFO - ✅ Validation completed with status: VALID
-2025-09-24 17:57:32,246 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task validation (validation) in 1.61s at 17:57:32.246
-2025-09-24 17:57:32,247 - core.task_manager - INFO - ✅ ✅ Phase 3: Executing 1 summary tasks
-2025-09-24 17:57:32,247 - core.agent_communicator - INFO - ✅ 🚀 STARTING task summary on summary agent at 17:57:32.247
-2025-09-24 17:57:32,260 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
-2025-09-24 17:57:32,261 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
-2025-09-24 17:57:32,262 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:57:32,263 - core.agent_communicator - INFO - ✅ 📦 Agent summary instantiated for task summary at 17:57:32.263
-2025-09-24 17:57:32,263 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent summary for task summary at 17:57:32.263
-2025-09-24 17:57:32,263 - agents.summary_agent - INFO - ✅ Running summary agent
-2025-09-24 17:57:32,263 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: summarization context Chào em
-2025-09-24 17:57:34,080 - agents.summary_agent - INFO - ✅ Summary completed successfully!
-2025-09-24 17:57:34,080 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task summary (summary) in 1.83s at 17:57:34.080
-2025-09-24 17:57:34,083 - database.mongodb_client - INFO - ✅ Updated task worker-analyst status to completed
-2025-09-24 17:57:34,085 - database.mongodb_client - INFO - ✅ Updated task validation status to completed
-2025-09-24 17:57:34,086 - database.mongodb_client - INFO - ✅ Updated task summary status to completed
-2025-09-24 17:57:34,086 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3ce98388d6c1694829894
-2025-09-24 17:57:34,087 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:57:34,087 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 17:58:10,653 - __main__ - INFO - ✅ 🚀 New request received: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 17:58:10,653 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 17:58:10,661 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:58:10,664 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:58:10,665 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:58:10,665 - main - INFO - ✅ System initialization completed
-2025-09-24 17:58:10,665 - main - INFO - ✅ Processing request: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 17:58:10,665 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 17:58:10,665 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 17:58:10,672 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:58:10,673 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 17:58:10,674 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 17:58:11,787 - agents.intent_agent - WARNING - ⚠️ LLM structured output failed: 1 validation error for PlanningOutput
-tasks.0.agent_url
-  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/string_type, using fallback logic
-2025-09-24 17:58:11,788 - agents.intent_agent - INFO - ✅ 🔧 Creating tasks based on available agents...
-2025-09-24 17:58:11,788 - agents.intent_agent - INFO - ✅ ✅ Created 3 tasks with phase-based execution
-2025-09-24 17:58:11,790 - database.mongodb_client - INFO - ✅ Created session: 68d3cec3388d6c169482989b
-2025-09-24 17:58:11,790 - agents.intent_agent - INFO - ✅ Planning completed with 3 tasks
-2025-09-24 17:58:11,790 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:58:11,790 - main - INFO - ✅ 📋 Execution plan created with 3 tasks
-2025-09-24 17:58:11,790 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 17:58:11,791 - core.task_manager - INFO - ✅ Executing plan for session 68d3cec3388d6c169482989b
-2025-09-24 17:58:11,795 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 17:58:11,796 - database.mongodb_client - INFO - ✅ Created task: 68d3cec3388d6c169482989d
-2025-09-24 17:58:11,797 - database.mongodb_client - INFO - ✅ Created task: 68d3cec3388d6c169482989e
-2025-09-24 17:58:11,797 - database.mongodb_client - INFO - ✅ Created task: 68d3cec3388d6c169482989f
-2025-09-24 17:58:11,797 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 17:58:11,797 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 17:58:11,797 - core.agent_communicator - INFO - ✅ Creating parallel task 1: worker-analyst (analyst)
-2025-09-24 17:58:11,797 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 17:58:11,798 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 17:58:11.798...
-2025-09-24 17:58:11,798 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: worker-analyst (analyst) at 17:58:11.798
-2025-09-24 17:58:11,798 - core.agent_communicator - INFO - ✅ 🚀 STARTING task worker-analyst on analyst agent at 17:58:11.798
-2025-09-24 17:58:11,803 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 17:58:11,803 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 17:58:11,805 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:58:11,805 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task worker-analyst at 17:58:11.805
-2025-09-24 17:58:11,805 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task worker-analyst at 17:58:11.805
-2025-09-24 17:58:11,805 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 17:58:14,713 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
-2025-09-24 17:58:14,713 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task worker-analyst (analyst) in 2.91s at 17:58:14.713
-2025-09-24 17:58:14,713 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: worker-analyst (analyst) at 17:58:14.713
-2025-09-24 17:58:14,714 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 17:58:14.714...
-2025-09-24 17:58:14,714 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 17:58:14,714 - core.task_manager - INFO - ✅ ✅ Phase 2: Executing 1 validation tasks
-2025-09-24 17:58:14,714 - core.agent_communicator - INFO - ✅ 🚀 STARTING task validation on validation agent at 17:58:14.714
-2025-09-24 17:58:14,722 - prompts.build_context - INFO - ✅ Loading validation prompt successfully!
-2025-09-24 17:58:14,722 - prompts.build_context - INFO - ✅ Building validation prompt successfully!
-2025-09-24 17:58:14,725 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:58:14,725 - core.agent_communicator - INFO - ✅ 📦 Agent validation instantiated for task validation at 17:58:14.725
-2025-09-24 17:58:14,725 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent validation for task validation at 17:58:14.725
-2025-09-24 17:58:14,726 - agents.validation_agent - INFO - ✅ Running validation agent
-2025-09-24 17:58:16,796 - agents.validation_agent - INFO - ✅ Validation completed with status: VALID
-2025-09-24 17:58:16,796 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task validation (validation) in 2.08s at 17:58:16.796
-2025-09-24 17:58:16,797 - core.task_manager - INFO - ✅ ✅ Phase 3: Executing 1 summary tasks
-2025-09-24 17:58:16,797 - core.agent_communicator - INFO - ✅ 🚀 STARTING task summary on summary agent at 17:58:16.797
-2025-09-24 17:58:16,801 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
-2025-09-24 17:58:16,801 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
-2025-09-24 17:58:16,802 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 17:58:16,802 - core.agent_communicator - INFO - ✅ 📦 Agent summary instantiated for task summary at 17:58:16.802
-2025-09-24 17:58:16,802 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent summary for task summary at 17:58:16.802
-2025-09-24 17:58:16,802 - agents.summary_agent - INFO - ✅ Running summary agent
-2025-09-24 17:58:16,802 - mcp_server.mock_tools - INFO - ✅ RAG Tool executed: summarization context Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo cho tôi
-2025-09-24 17:58:19,039 - agents.summary_agent - WARNING - ⚠️ Structured output failed: Structured output returned None, trying fallback
-2025-09-24 17:58:21,823 - agents.summary_agent - INFO - ✅ Summary completed successfully!
-2025-09-24 17:58:21,824 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task summary (summary) in 5.03s at 17:58:21.824
-2025-09-24 17:58:21,827 - database.mongodb_client - INFO - ✅ Updated task worker-analyst status to completed
-2025-09-24 17:58:21,829 - database.mongodb_client - INFO - ✅ Updated task validation status to completed
-2025-09-24 17:58:21,830 - database.mongodb_client - INFO - ✅ Updated task summary status to completed
-2025-09-24 17:58:21,830 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3cec3388d6c169482989b
-2025-09-24 17:58:21,831 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 17:58:21,831 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 18:02:22,195 - __main__ - INFO - ✅ 🚀 New request received: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:02:22,197 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 18:02:22,251 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:02:22,252 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:02:22,253 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:02:22,253 - main - INFO - ✅ System initialization completed
-2025-09-24 18:02:22,253 - main - INFO - ✅ Processing request: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:02:22,253 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 18:02:22,253 - agents.intent_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 18:02:22,262 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:02:22,263 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:02:22,263 - agents.intent_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 18:02:23,606 - agents.intent_agent - INFO - ✅ 🎯 LLM detected intents: ['material_analysis']
-2025-09-24 18:02:23,606 - agents.intent_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 18:02:23,607 - database.mongodb_client - INFO - ✅ Created session: 68d3cfbf388d6c16948298a2
-2025-09-24 18:02:23,607 - agents.intent_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 18:02:23,608 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:02:23,608 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 18:02:23,608 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 18:02:23,608 - core.task_manager - INFO - ✅ Executing plan for session 68d3cfbf388d6c16948298a2
-2025-09-24 18:02:23,612 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:02:23,613 - database.mongodb_client - INFO - ✅ Created task: 68d3cfbf388d6c16948298a4
-2025-09-24 18:02:23,613 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 18:02:23,613 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 18:02:23,613 - core.agent_communicator - INFO - ✅ Creating parallel task 1: task1 (analyst)
-2025-09-24 18:02:23,613 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 18:02:23,613 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 18:02:23.613...
-2025-09-24 18:02:23,613 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: task1 (analyst) at 18:02:23.613
-2025-09-24 18:02:23,614 - core.agent_communicator - INFO - ✅ 🚀 STARTING task task1 on analyst agent at 18:02:23.614
-2025-09-24 18:02:23,617 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 18:02:23,617 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 18:02:23,619 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 18:02:23,619 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task task1 at 18:02:23.619
-2025-09-24 18:02:23,619 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task task1 at 18:02:23.619
-2025-09-24 18:02:23,619 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 18:02:28,065 - agents.analyst_agent - ERROR - ❌ Error running analyst agent: 2 validation errors for AnalystAgentOutput
-risk_factors
-  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/list_type
-tools_used
-  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/list_type
-2025-09-24 18:02:28,067 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task task1 (analyst) in 4.45s at 18:02:28.067
-2025-09-24 18:02:28,068 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: task1 (analyst) at 18:02:28.068
-2025-09-24 18:02:28,074 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 18:02:28.074...
-2025-09-24 18:02:28,074 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 18:02:28,088 - database.mongodb_client - INFO - ✅ Updated task task1 status to completed
-2025-09-24 18:02:28,091 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3cfbf388d6c16948298a2
-2025-09-24 18:02:28,093 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:02:28,093 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 18:02:42,177 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
-2025-09-24 18:02:42,178 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
-2025-09-24 18:02:42,179 - core.agent_communicator - INFO - ✅ Agent Communicator initialized
-2025-09-24 18:02:42,179 - core.task_manager - INFO - ✅ Task Manager initialized
-2025-09-24 18:02:42,180 - main - INFO - ✅ DeepModel System initialized
-2025-09-24 18:02:46,981 - __main__ - INFO - ✅ 🚀 New request received: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:02:46,981 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 18:02:47,054 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:02:47,055 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:02:47,056 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:02:47,056 - main - INFO - ✅ System initialization completed
-2025-09-24 18:02:47,056 - main - INFO - ✅ Processing request: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:02:47,056 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 18:02:47,056 - agents.planning_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 18:02:47,058 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:02:47,059 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:02:47,059 - agents.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 18:02:48,658 - agents.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['physics_analysis']
-2025-09-24 18:02:48,658 - agents.planning_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 18:02:48,661 - database.mongodb_client - INFO - ✅ Created session: 68d3cfd8473fb39edfca17d2
-2025-09-24 18:02:48,662 - agents.planning_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 18:02:48,663 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:02:48,663 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 18:02:48,663 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 18:02:48,663 - core.task_manager - INFO - ✅ Executing plan for session 68d3cfd8473fb39edfca17d2
-2025-09-24 18:02:48,686 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:02:48,686 - database.mongodb_client - INFO - ✅ Created task: 68d3cfd8473fb39edfca17d4
-2025-09-24 18:02:48,687 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 18:02:48,687 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 18:02:48,687 - core.agent_communicator - INFO - ✅ Creating parallel task 1: task-1 (analyst)
-2025-09-24 18:02:48,687 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 18:02:48,687 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 18:02:48.687...
-2025-09-24 18:02:48,687 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: task-1 (analyst) at 18:02:48.687
-2025-09-24 18:02:48,687 - core.agent_communicator - INFO - ✅ 🚀 STARTING task task-1 on analyst agent at 18:02:48.687
-2025-09-24 18:02:48,695 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 18:02:48,696 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 18:02:48,697 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 18:02:48,697 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task task-1 at 18:02:48.697
-2025-09-24 18:02:48,697 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task task-1 at 18:02:48.697
-2025-09-24 18:02:48,697 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 18:02:52,677 - agents.analyst_agent - ERROR - ❌ Error running analyst agent: 2 validation errors for AnalystAgentOutput
-risk_factors
-  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/list_type
-tools_used
-  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/list_type
-2025-09-24 18:02:52,678 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task task-1 (analyst) in 3.99s at 18:02:52.678
-2025-09-24 18:02:52,678 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: task-1 (analyst) at 18:02:52.678
-2025-09-24 18:02:52,680 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 18:02:52.680...
-2025-09-24 18:02:52,680 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 18:02:52,686 - database.mongodb_client - INFO - ✅ Updated task task-1 status to completed
-2025-09-24 18:02:52,686 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3cfd8473fb39edfca17d2
-2025-09-24 18:02:52,687 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:02:52,688 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 18:05:04,235 - __main__ - INFO - ✅ 🚀 New request received: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:05:04,236 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 18:05:04,250 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:04,257 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:05:04,258 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:04,258 - main - INFO - ✅ System initialization completed
-2025-09-24 18:05:04,258 - main - INFO - ✅ Processing request: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:05:04,258 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 18:05:04,258 - agents.planning_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 18:05:04,262 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:04,264 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:05:04,264 - agents.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 18:05:05,655 - agents.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['material_analysis']
-2025-09-24 18:05:05,655 - agents.planning_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 18:05:05,657 - database.mongodb_client - INFO - ✅ Created session: 68d3d061473fb39edfca17d7
-2025-09-24 18:05:05,657 - agents.planning_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 18:05:05,657 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:05,657 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 18:05:05,657 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 18:05:05,658 - core.task_manager - INFO - ✅ Executing plan for session 68d3d061473fb39edfca17d7
-2025-09-24 18:05:05,661 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:05,661 - database.mongodb_client - INFO - ✅ Created task: 68d3d061473fb39edfca17d9
-2025-09-24 18:05:05,662 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 18:05:05,662 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 18:05:05,662 - core.agent_communicator - INFO - ✅ Creating parallel task 1: 1 (analyst)
-2025-09-24 18:05:05,662 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 18:05:05,662 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 18:05:05.662...
-2025-09-24 18:05:05,662 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: 1 (analyst) at 18:05:05.662
-2025-09-24 18:05:05,663 - core.agent_communicator - INFO - ✅ 🚀 STARTING task 1 on analyst agent at 18:05:05.663
-2025-09-24 18:05:05,674 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 18:05:05,675 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 18:05:05,677 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 18:05:05,677 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task 1 at 18:05:05.677
-2025-09-24 18:05:05,677 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task 1 at 18:05:05.677
-2025-09-24 18:05:05,677 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 18:05:08,364 - agents.analyst_agent - INFO - ✅ Analysis completed with 2 findings
-2025-09-24 18:05:08,364 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task 1 (analyst) in 2.70s at 18:05:08.364
-2025-09-24 18:05:08,365 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: 1 (analyst) at 18:05:08.365
-2025-09-24 18:05:08,366 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 18:05:08.366...
-2025-09-24 18:05:08,367 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 18:05:08,372 - database.mongodb_client - INFO - ✅ Updated task 1 status to completed
-2025-09-24 18:05:08,373 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3d061473fb39edfca17d7
-2025-09-24 18:05:08,373 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:08,374 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 18:05:25,924 - __main__ - INFO - ✅ 🚀 New request received: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:05:25,925 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 18:05:25,940 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:25,942 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:05:25,943 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:25,943 - main - INFO - ✅ System initialization completed
-2025-09-24 18:05:25,943 - main - INFO - ✅ Processing request: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:05:25,943 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 18:05:25,943 - agents.planning_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 18:05:25,947 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:25,949 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:05:25,949 - agents.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 18:05:27,355 - agents.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['physics_analysis']
-2025-09-24 18:05:27,355 - agents.planning_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 18:05:27,358 - database.mongodb_client - INFO - ✅ Created session: 68d3d077473fb39edfca17dc
-2025-09-24 18:05:27,358 - agents.planning_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 18:05:27,359 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:27,360 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 18:05:27,360 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 18:05:27,360 - core.task_manager - INFO - ✅ Executing plan for session 68d3d077473fb39edfca17dc
-2025-09-24 18:05:27,368 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:27,370 - database.mongodb_client - INFO - ✅ Created task: 68d3d077473fb39edfca17de
-2025-09-24 18:05:27,370 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 18:05:27,370 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 18:05:27,370 - core.agent_communicator - INFO - ✅ Creating parallel task 1: task1 (analyst)
-2025-09-24 18:05:27,370 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 18:05:27,371 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 18:05:27.370...
-2025-09-24 18:05:27,371 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: task1 (analyst) at 18:05:27.371
-2025-09-24 18:05:27,371 - core.agent_communicator - INFO - ✅ 🚀 STARTING task task1 on analyst agent at 18:05:27.371
-2025-09-24 18:05:27,379 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 18:05:27,380 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 18:05:27,383 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 18:05:27,383 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task task1 at 18:05:27.383
-2025-09-24 18:05:27,383 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task task1 at 18:05:27.383
-2025-09-24 18:05:27,383 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 18:05:33,206 - agents.analyst_agent - ERROR - ❌ Error running analyst agent: 2 validation errors for AnalystAgentOutput
-risk_factors
-  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/list_type
-tools_used
-  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
-    For further information visit https://errors.pydantic.dev/2.11/v/list_type
-2025-09-24 18:05:33,207 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task task1 (analyst) in 5.84s at 18:05:33.207
-2025-09-24 18:05:33,208 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: task1 (analyst) at 18:05:33.208
-2025-09-24 18:05:33,209 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 18:05:33.209...
-2025-09-24 18:05:33,209 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 18:05:33,213 - database.mongodb_client - INFO - ✅ Updated task task1 status to completed
-2025-09-24 18:05:33,213 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3d077473fb39edfca17dc
-2025-09-24 18:05:33,216 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:33,216 - __main__ - INFO - ✅ ✅ Request completed with status: success
-2025-09-24 18:05:37,751 - __main__ - INFO - ✅ 🚀 New request received: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:05:37,752 - main - INFO - ✅ Initializing DeepModel System...
-2025-09-24 18:05:37,766 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:37,768 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:05:37,768 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:37,768 - main - INFO - ✅ System initialization completed
-2025-09-24 18:05:37,768 - main - INFO - ✅ Processing request: Sử dụng tiếng việt để phan tích tại sao đá lại tan ở mức nhiệt độ phòng còn nến thì không ? báo cáo ...
-2025-09-24 18:05:37,768 - main - INFO - ✅ 🧠 Starting planning phase...
-2025-09-24 18:05:37,768 - agents.planning_agent - INFO - ✅ Planning Agent starting analysis
-2025-09-24 18:05:37,772 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:37,773 - database.mongodb_client - INFO - ✅ Retrieved 5 active agent cards
-2025-09-24 18:05:37,773 - agents.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
-2025-09-24 18:05:39,153 - agents.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['physics_analysis']
-2025-09-24 18:05:39,153 - agents.planning_agent - INFO - ✅ ✅ Created 1 tasks with phase-based execution
-2025-09-24 18:05:39,155 - database.mongodb_client - INFO - ✅ Created session: 68d3d083473fb39edfca17e1
-2025-09-24 18:05:39,155 - agents.planning_agent - INFO - ✅ Planning completed with 1 tasks
-2025-09-24 18:05:39,156 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:39,156 - main - INFO - ✅ 📋 Execution plan created with 1 tasks
-2025-09-24 18:05:39,156 - main - INFO - ✅ 🚀 Starting task execution...
-2025-09-24 18:05:39,156 - core.task_manager - INFO - ✅ Executing plan for session 68d3d083473fb39edfca17e1
-2025-09-24 18:05:39,159 - database.mongodb_client - INFO - ✅ Connected to MongoDB: deepmodel_agents
-2025-09-24 18:05:39,160 - database.mongodb_client - INFO - ✅ Created task: 68d3d083473fb39edfca17e3
-2025-09-24 18:05:39,160 - core.task_manager - INFO - ✅ ✅ Phase 1: Executing 1 worker tasks in parallel
-2025-09-24 18:05:39,160 - core.agent_communicator - INFO - ✅ Executing 1 tasks in parallel
-2025-09-24 18:05:39,160 - core.agent_communicator - INFO - ✅ Creating parallel task 1: task1 (analyst)
-2025-09-24 18:05:39,160 - core.agent_communicator - INFO - ✅ ✨ Task 1 created and scheduled for parallel execution
-2025-09-24 18:05:39,160 - core.agent_communicator - INFO - ✅ 🚀 Starting parallel execution of 1 tasks at 18:05:39.160...
-2025-09-24 18:05:39,161 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK STARTED: task1 (analyst) at 18:05:39.161
-2025-09-24 18:05:39,161 - core.agent_communicator - INFO - ✅ 🚀 STARTING task task1 on analyst agent at 18:05:39.161
-2025-09-24 18:05:39,170 - prompts.build_context - INFO - ✅ Loading analyst prompt successfully!
-2025-09-24 18:05:39,170 - prompts.build_context - INFO - ✅ Building analyst prompt successfully!
-2025-09-24 18:05:39,173 - mcp_server.mock_tools - INFO - ✅ MCP Tools Manager initialized
-2025-09-24 18:05:39,173 - core.agent_communicator - INFO - ✅ 📦 Agent analyst instantiated for task task1 at 18:05:39.173
-2025-09-24 18:05:39,173 - core.agent_communicator - INFO - ✅ ⚡ RUNNING agent analyst for task task1 at 18:05:39.173
-2025-09-24 18:05:39,174 - agents.analyst_agent - INFO - ✅ Running analyst agent
-2025-09-24 18:05:44,291 - agents.analyst_agent - INFO - ✅ Analysis completed with 5 findings
-2025-09-24 18:05:44,295 - core.agent_communicator - INFO - ✅ ✅ COMPLETED task task1 (analyst) in 5.13s at 18:05:44.295
-2025-09-24 18:05:44,295 - core.agent_communicator - INFO - ✅ 🔥 PARALLEL TASK FINISHED: task1 (analyst) at 18:05:44.295
-2025-09-24 18:05:44,300 - core.agent_communicator - INFO - ✅ 🏁 Parallel execution completed. Processing 1 results at 18:05:44.299...
-2025-09-24 18:05:44,300 - core.agent_communicator - INFO - ✅ Parallel execution completed. 1 succeeded, 0 failed
-2025-09-24 18:05:44,362 - database.mongodb_client - INFO - ✅ Updated task task1 status to completed
-2025-09-24 18:05:44,363 - core.task_manager - INFO - ✅ Plan execution completed for session 68d3d083473fb39edfca17e1
-2025-09-24 18:05:44,370 - database.mongodb_client - INFO - ✅ Disconnected from MongoDB
-2025-09-24 18:05:44,370 - __main__ - INFO - ✅ ✅ Request completed with status: success
+2025-09-25 14:44:31,396 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:44:41,433 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:46:06,664 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:46:06,666 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:46:06,670 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:46:06,671 - agents.planningAgent.planning_agent - INFO - ✅ Using 3 mock agents for testing
+2025-09-25 14:46:06,671 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:46:08,388 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:46:08,389 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:46:08,390 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:46:08,391 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:47:48,942 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:47:48,974 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:47:48,975 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:47:48,978 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:47:48,979 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:47:48,980 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:47:48,980 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:47:51,947 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:47:51,948 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:47:51,949 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:47:51,949 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:48:35,811 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:48:35,812 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:48:35,818 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:48:35,822 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:48:35,829 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:48:35,830 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:48:37,517 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:48:37,519 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:48:37,519 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:48:37,520 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:49:21,127 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:49:21,200 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:49:21,210 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:49:21,214 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:49:21,217 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:49:21,218 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:49:21,219 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:49:22,954 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:49:22,956 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:49:22,956 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:49:22,957 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:50:56,578 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:50:56,612 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:50:56,612 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:50:56,615 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:50:56,617 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:50:56,618 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:50:56,618 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:50:58,495 - agents.planningAgent.planning_agent - ERROR - ❌ Error in planning agent: 2 validation errors for PlanningOutput
+tasks.0.context
+  Input should be a valid dictionary [type=dict_type, input_value='technical', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+tasks.1.context
+  Input should be a valid dictionary [type=dict_type, input_value='market', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+2025-09-25 14:51:23,687 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:51:23,716 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:51:23,716 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:51:23,719 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:51:23,721 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:51:23,722 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:51:23,722 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:51:25,626 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:51:25,628 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:51:25,630 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:51:25,631 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:52:36,073 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:52:36,098 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:52:36,099 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:52:36,102 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:52:36,103 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:52:36,104 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:52:36,105 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:52:38,057 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:52:38,058 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:52:38,059 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:52:38,060 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:53:26,380 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:53:26,409 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:53:26,410 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:53:26,413 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:53:26,415 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:53:26,416 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:53:26,416 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:53:28,389 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:53:28,390 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:53:28,391 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:53:28,392 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:56:14,837 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:56:14,950 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:56:14,950 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:56:14,953 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:56:14,955 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:56:14,956 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:56:14,956 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:56:16,745 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis']
+2025-09-25 14:56:16,762 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:56:16,763 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:56:16,763 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 14:56:16,784 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 14:56:16,828 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 14:56:16,829 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 14:56:16,831 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 14:56:16,831 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 14:56:18,019 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 14:56:19,099 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 14:56:19,099 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 14:58:40,241 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:58:40,279 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:58:40,280 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:58:40,282 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:58:40,284 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:58:40,285 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:58:40,285 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:58:41,773 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary']
+2025-09-25 14:58:41,775 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 1 tasks
+2025-09-25 14:58:41,776 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 1 tasks
+2025-09-25 14:58:41,776 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 1 tasks
+2025-09-25 14:58:41,812 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 14:58:41,851 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 14:58:41,851 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 14:58:41,853 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 14:58:41,853 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 14:58:43,960 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 14:58:47,625 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 14:58:47,626 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 14:59:31,442 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 14:59:31,446 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 14:59:31,453 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 14:59:31,459 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 14:59:31,465 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 14:59:31,467 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 14:59:33,280 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['document_summarization', 'market_analysis']
+2025-09-25 14:59:33,281 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 14:59:33,281 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 14:59:33,282 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 15:00:17,717 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:00:17,743 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:00:17,744 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:00:17,750 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:00:17,751 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:00:19,033 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:00:22,197 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:00:22,198 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:00:22,204 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 15:00:22,209 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:00:22,210 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:00:22,211 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:00:22,212 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:00:23,843 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 15:00:23,843 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:01:01,609 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:01:01,628 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:01:01,630 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:01:01,634 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:01:01,635 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:01:02,832 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:01:03,830 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:01:03,832 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:01:10,027 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:01:10,091 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:01:10,093 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:01:10,096 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:01:10,096 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:01:11,278 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:01:13,993 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:01:13,995 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:01:14,005 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 15:01:14,011 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:01:14,012 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:01:14,014 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:01:14,014 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:01:15,969 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 15:01:15,970 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:02:54,808 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 15:02:54,864 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 15:02:54,866 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 15:02:54,879 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 15:02:54,925 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 15:02:54,926 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 15:02:54,926 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 15:02:56,835 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis']
+2025-09-25 15:02:56,836 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 15:02:56,837 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 15:02:56,838 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 15:02:56,861 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:02:56,899 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:02:56,899 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:02:56,901 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:02:56,902 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:02:58,050 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:02:58,873 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:02:58,876 - agent-hub.server - ERROR - ❌ Error executing task: 1 validation error for TaskResponse
+result_data
+  Input should be a valid dictionary [type=dict_type, input_value='Okay, I will summarize t...e summarization task.\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+2025-09-25 15:02:58,882 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 15:02:58,888 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:02:58,889 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:02:58,890 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:02:58,890 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:03:01,269 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:03:02,989 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:03:02,992 - agent-hub.server - ERROR - ❌ Error executing task: 1 validation error for TaskResponse
+result_data
+  Input should be a valid dictionary [type=dict_type, input_value="Here's a summary based o...ng market conditions.\n", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+2025-09-25 15:03:27,003 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 15:03:27,045 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 15:03:27,045 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 15:03:27,048 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 15:03:27,050 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 15:03:27,051 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 15:03:27,051 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 15:03:29,075 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis']
+2025-09-25 15:03:29,079 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 15:03:29,080 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 15:03:29,081 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 15:03:29,102 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:03:29,126 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:03:29,127 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:03:29,128 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:03:29,129 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:03:30,362 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:03:31,306 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:03:31,307 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:03:31,313 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 15:03:31,319 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:03:31,320 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:03:31,322 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:03:31,324 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:03:32,975 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 15:03:32,976 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:06:24,395 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 15:06:24,396 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 15:06:24,401 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 15:06:24,419 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 15:06:24,423 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 15:06:24,424 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 15:06:26,318 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis']
+2025-09-25 15:06:26,320 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 2 tasks
+2025-09-25 15:06:26,321 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 2 tasks
+2025-09-25 15:06:26,322 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 2 tasks
+2025-09-25 15:07:13,433 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:07:13,456 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:07:13,458 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:07:13,459 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:07:13,459 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:07:14,650 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:07:19,192 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:07:19,194 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:07:19,204 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 15:07:19,212 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:07:19,213 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:07:19,220 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:07:19,221 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:07:21,572 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:07:22,921 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:07:22,921 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:08:38,520 - prompts.build_context - INFO - ✅ Loading planning prompt successfully!
+2025-09-25 15:08:38,540 - prompts.build_context - INFO - ✅ Building planning prompt successfully!
+2025-09-25 15:08:38,548 - agents.planningAgent.planning_agent - INFO - ✅ Planning Agent starting analysis
+2025-09-25 15:08:38,556 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema
+2025-09-25 15:08:38,567 - agents.planningAgent.planning_agent - INFO - ✅ Using 1 mock agents for testing
+2025-09-25 15:08:38,569 - agents.planningAgent.planning_agent - INFO - ✅ 🧠 Analyzing user input with LLM for intent detection...
+2025-09-25 15:08:40,933 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM detected intents: ['technical_summary', 'market_analysis', 'cooking_instruction', 'calculation']
+2025-09-25 15:08:40,933 - agents.planningAgent.planning_agent - INFO - ✅ 🎯 LLM created 3 tasks
+2025-09-25 15:08:40,934 - agents.planningAgent.planning_agent - INFO - ✅ ✅ LLM planning completed with 3 tasks
+2025-09-25 15:08:40,934 - agents.planningAgent.planning_agent - INFO - ✅ Planning completed with 3 tasks
+2025-09-25 15:09:04,238 - agent-hub.server - INFO - ✅ Received task request: 1
+2025-09-25 15:09:04,257 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:09:04,258 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:09:04,259 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:09:04,260 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:09:05,263 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:09:08,402 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:09:08,403 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:09:08,407 - agent-hub.server - INFO - ✅ Received task request: 2
+2025-09-25 15:09:08,412 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:09:08,412 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:09:08,413 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:09:08,414 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:09:09,376 - agents.summaryAgent.summary_agent - WARNING - ⚠️ Structured output failed on attempt 1: Structured output returned None
+2025-09-25 15:09:12,095 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Fallback response successful on attempt 1
+2025-09-25 15:09:12,096 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 15:09:12,105 - agent-hub.server - INFO - ✅ Received task request: 3
+2025-09-25 15:09:12,113 - prompts.build_context - INFO - ✅ Loading summary prompt successfully!
+2025-09-25 15:09:12,114 - prompts.build_context - INFO - ✅ Building summary prompt successfully!
+2025-09-25 15:09:12,115 - agents.summaryAgent.summary_agent - INFO - ✅ Running summary agent
+2025-09-25 15:09:12,115 - agents.summaryAgent.summary_agent - INFO - ✅ Attempt 1/3
+2025-09-25 15:09:14,106 - agents.summaryAgent.summary_agent - INFO - ✅ ✅ Structured output successful on attempt 1
+2025-09-25 15:09:14,107 - agent-hub.server - INFO - ✅ Task completed: completed
+2025-09-25 17:40:55,653 - agent-hub.server - INFO - ✅ /Users/btk0286/hailt/deepmodel/production/agent-hub/schema

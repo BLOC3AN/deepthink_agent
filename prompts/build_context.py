@@ -49,7 +49,7 @@ class BuildContext:
             logger.info("Loading planning prompt successfully!")
             prompt = ChatPromptTemplate.from_messages([
                 ("system", f"{planning_prompt}"),
-                ("human", "User Input: {input}\nContext: {context}\nAvailable Agents: {agents}"),
+                ("human", "User Input: {input}\nAvailable Agents: {agents}"),
             ])
             logger.info("Building planning prompt successfully!")
             return prompt
